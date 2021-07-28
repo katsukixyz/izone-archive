@@ -136,7 +136,16 @@ const VideoList: React.FC<VideoListProps> = ({ data, initListData }) => {
                           .local()
                           .format("MMMM D YYYY, h:mm:ss A")}
                       </p>
-                      <p style={{ color: "black" }}>
+                      <p
+                        style={{
+                          color: "black",
+                          width: "auto",
+                          display: "inline",
+                          backgroundColor: "#f8f4f4",
+                          padding: "4px",
+                          borderRadius: 4,
+                        }}
+                      >
                         <Duration timestamp={item.duration} />
                       </p>
                     </div>
