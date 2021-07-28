@@ -27,6 +27,7 @@ const Contact: React.FC = () => {
           <a
             href="https://github.com/katsukixyz/izone-archive/issues"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub repository
           </a>{" "}
@@ -39,6 +40,7 @@ const Contact: React.FC = () => {
           <a
             href="https://github.com/katsukixyz/izone-archive/issues"
             target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>{" "}
