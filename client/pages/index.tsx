@@ -127,9 +127,16 @@ const VideoList: React.FC<VideoListProps> = ({ data, initListData }) => {
                       </div>
                     </Link>
                     <div className="cardMeta" style={{ width: "55%" }}>
-                      <p style={{ fontSize: 22, fontWeight: 500 }}>
-                        {item.title}
-                      </p>
+                      <Link href={`/video/${item.id}`}>
+                        <a
+                          style={{
+                            fontSize: 22,
+                            fontWeight: 500,
+                          }}
+                        >
+                          {item.title}
+                        </a>
+                      </Link>
                       <p>
                         {dayjs
                           .utc(item.date)

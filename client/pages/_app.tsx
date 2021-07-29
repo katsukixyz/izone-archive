@@ -10,6 +10,7 @@ import { VideoMeta } from "../types/types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "../styles/style.css";
+import "../styles/globals.css";
 import Head from "next/head";
 
 interface AppProps {
