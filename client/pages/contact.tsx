@@ -1,8 +1,13 @@
 import React from "react";
+import Head from "next/head";
 
 const Contact: React.FC = () => {
   return (
     <div className="contact" style={{ paddingTop: "20px" }}>
+      <Head>
+        <title>Contact</title>
+        <meta property="og:site_name" content="IZ*ONE VLIVE Archive" />
+      </Head>
       <div
         className="card"
         style={{
