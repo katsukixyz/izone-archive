@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import Router from "next/router";
 import Image from "next/image";
+import nprogress from "nprogress";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import ListDataContext from "../contexts/ListDataContext";
@@ -11,7 +13,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "../styles/style.css";
 import "../styles/globals.css";
+import "../styles/nprogress.css";
 import Head from "next/head";
+
+Router.events.on("routeChangeStart", () => nprogress.start());
+Router.events.on("routeChangeComplete", () => nprogress.done());
+Router.events.on("routeChangeError", () => nprogress.done());
 
 interface AppProps {
   Component: any;
