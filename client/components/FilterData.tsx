@@ -41,6 +41,7 @@ const FilterData: React.FC<FilterDataProps> = ({
         position: "sticky",
         top: 0,
         zIndex: 10,
+        backgroundColor: "white",
       }}
     >
       <RangePicker
