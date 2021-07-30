@@ -8,6 +8,12 @@
   cursor: pointer;
 }
 
+.upIcon:hover {
+  color: var(--izone-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 @media (max-width: 600px) {
   .list {
     width: auto;

@@ -1,6 +1,6 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import Head from "next/head";
-import FilterData from "../components/FilterData";
+import FilterData, { combineFilters } from "../components/FilterData";
 import dayjs from "dayjs";
 import isBetween from "dayjs/plugin/isBetween";
 import utc from "dayjs/plugin/utc";
@@ -12,6 +12,7 @@ import SearchContext from "../contexts/SearchContext";
 import { meta } from "../src/meta";
 import { VideoMeta } from "../types/types";
 import VideoCard from "../components/VideoCard";
+import { IoChevronUp } from "react-icons/io5";
 
 dayjs.extend(isBetween);
 dayjs.extend(utc);
@@ -26,6 +27,23 @@ const VideoList: React.FC<VideoListProps> = ({ data, initListData }) => {
   const { dateRange, setDateRange } = useContext(DateRangeContext);
   const { sort, setSort } = useContext(SortContext);
   const { search, setSearch } = useContext(SearchContext);
+
+  const [buttonVis, setButtonVis] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setButtonVis(true);
+    } else {
+      setButtonVis(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   function fetchNextData() {
     //compare listData to data and get n more results
@@ -45,6 +63,7 @@ const VideoList: React.FC<VideoListProps> = ({ data, initListData }) => {
   }
 
   useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
     //determines initial render (empty listData) or not (non-empty listData)
     if (listData.length !== 0) {
       setListData(listData);
@@ -66,7 +85,7 @@ const VideoList: React.FC<VideoListProps> = ({ data, initListData }) => {
       </Head>
 
       <FilterData
-        combineFilters={combineFilters}
+        // combineFilters={combineFilters}
         setDateRange={setDateRange}
         setSort={setSort}
         setSearch={setSearch}
@@ -76,6 +95,28 @@ const VideoList: React.FC<VideoListProps> = ({ data, initListData }) => {
         sort={sort}
         search={search}
       />
+
+      {buttonVis ? (
+        <div
+          onClick={scrollToTop}
+          style={{
+            position: "fixed",
+            bottom: "2%",
+            right: "4%",
+            zIndex: 1,
+            padding: "8px",
+            borderRadius: 100,
+            backgroundColor: "#f8f4f4",
+            border: "0px",
+            boxShadow:
+              "0 5px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+          }}
+        >
+          <a>
+            <IoChevronUp className="upIcon" size={24} />
+          </a>
+        </div>
+      ) : null}
 
       <InfiniteScroll
         dataLength={listData ? listData.length : 0}
@@ -107,55 +148,6 @@ const VideoList: React.FC<VideoListProps> = ({ data, initListData }) => {
       </InfiniteScroll>
     </div>
   );
-};
-
-const combineFilters = (
-  data: VideoMeta[],
-  dateRange: any, //TODO: fix
-  sort: string,
-  search: string
-) => {
-  let dateFilteredListData;
-  let searchFilteredListData;
-  let sortFilteredListData;
-
-  //date first
-  if (dateRange != null) {
-    dateFilteredListData = data.filter(function (item) {
-      if (
-        dayjs
-          .utc(item.date)
-          .local()
-          .isBetween(dateRange[0], dateRange[1], "day", "[]")
-      ) {
-        return true;
-      }
-    });
-  } else {
-    dateFilteredListData = data;
-  }
-
-  //search next
-  if (search != "") {
-    searchFilteredListData = dateFilteredListData.filter((item) =>
-      item.title.toLowerCase().includes(search)
-    );
-  } else {
-    searchFilteredListData = dateFilteredListData;
-  }
-
-  //sort last
-  if (sort === "asc") {
-    sortFilteredListData = searchFilteredListData.sort(
-      (a, b) => dayjs(a.date).unix() - dayjs(b.date).unix()
-    );
-  } else {
-    sortFilteredListData = searchFilteredListData.sort(
-      (a, b) => dayjs(b.date).unix() - dayjs(a.date).unix()
-    );
-  }
-
-  return sortFilteredListData;
 };
 
 export async function getStaticProps() {
