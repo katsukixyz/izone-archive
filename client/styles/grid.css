@@ -1,0 +1,26 @@
+.listCard {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.video {
+  width: 40%;
+}
+
+.cardMeta {
+  width: 55%;
+}
+
+@media (max-width: 600px) {
+  .listCard {
+    display: block;
+    width: auto;
+  }
+  .cardMeta {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+  }
+}

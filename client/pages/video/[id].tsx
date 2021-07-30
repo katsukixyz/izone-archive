@@ -30,7 +30,7 @@ const Video: React.FC<VideoMeta> = ({
         <meta property="og:title" content={title} />
         <meta
           property="og:description"
-          content={`${dayjs.utc(date).format("YYYY-MM-DD")} ${id} ${title}`}
+          content={`${dayjs.utc(date).format("YYYY-MM-DD")}`}
         />
       </Head>
       <div
@@ -50,7 +50,7 @@ const Video: React.FC<VideoMeta> = ({
       </div>
       <div style={{ paddingTop: "20px" }}>
         <div
-          className="card"
+          className="videoCard"
           style={{
             paddingLeft: "10px",
             paddingRight: "10px",
@@ -63,10 +63,9 @@ const Video: React.FC<VideoMeta> = ({
             border: "0px",
             boxShadow:
               "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-            // backgroundColor: "#F8F8F8",
           }}
         >
-          <div className="video">
+          <div>
             <ReactPlayer
               playing
               url={video}
@@ -100,7 +99,6 @@ const Video: React.FC<VideoMeta> = ({
   );
 };
 
-// export async function getServerSideProps({ params }) {
 export async function getStaticProps({ params }: { params: { id: string } }) {
   const vidObj = meta.filter((vid) => vid.id === params.id)[0];
   return { props: vidObj };

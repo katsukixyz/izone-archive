@@ -1,3 +1,15 @@
+.list {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1000px;
+}
+
 .video:hover {
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .list {
+    width: auto;
+  }
 }

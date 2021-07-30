@@ -12,6 +12,7 @@ import { VideoMeta } from "../types/types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "../styles/style.css";
+import "../styles/grid.css";
 import "../styles/globals.css";
 import "../styles/nprogress.css";
 import Head from "next/head";
@@ -49,7 +50,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
                     <Image src="/logo.svg" width={46} height={44} />
                   </div>
                 </Navbar.Brand>
-                <Navbar.Collapse className="justify-content-end">
+                <Navbar.Collapse>
                   <Nav.Link
                     href="https://patreon.com/katsukixyz"
                     target="_blank"
