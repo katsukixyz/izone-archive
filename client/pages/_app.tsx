@@ -50,7 +50,11 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
                     <Image src="/logo.svg" width={46} height={44} />
                   </div>
                 </Navbar.Brand>
-                <Navbar.Collapse>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse
+                  id="responsive-navbar-nav"
+                  className="justify-content-end"
+                >
                   <Nav.Link
                     href="https://patreon.com/katsukixyz"
                     target="_blank"

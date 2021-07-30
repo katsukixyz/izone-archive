@@ -22,7 +22,7 @@ const Video: React.FC<VideoMeta> = ({
   const { id } = router.query;
 
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <Head>
         <title>{title}</title>
         <meta property="og:image" content={thumbnail} />
