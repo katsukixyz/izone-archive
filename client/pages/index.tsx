@@ -98,10 +98,10 @@ const VideoList: React.FC<VideoListProps> = ({ data, initListData }) => {
 
       {buttonVis ? (
         <div
+          className="upButton"
           onClick={scrollToTop}
           style={{
             position: "fixed",
-            bottom: "2%",
             right: "4%",
             zIndex: 1,
             padding: "8px",

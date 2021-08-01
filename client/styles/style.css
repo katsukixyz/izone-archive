@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.upButton {
+  bottom: calc(env(safe-area-inset-bottom) + 20px);
+}
+
 .upIcon:hover {
   color: var(--izone-color);
   cursor: pointer;
