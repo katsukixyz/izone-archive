@@ -49,7 +49,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1>{`${tagAmount}/554`}</h1>
+      <h1>{`Total videos tagged: ${tagAmount}/554`}</h1>
       {videoMeta.length !== 0 ? (
         <div
           className="videoInfo"
@@ -99,6 +99,7 @@ const App: React.FC = () => {
               </button>
             ))}
           </div>
+          <p>{`${videoMeta[index].date} ${videoMeta[index].id}`}</p>
         </div>
       ) : null}
       <div className="buttons">
@@ -125,6 +126,16 @@ const App: React.FC = () => {
           Next
         </button>
       </div>
+      <button
+        onClick={() => {
+          const nextUntagged = videoMeta.findIndex(
+            (e, i) => e.tags.length === 0 && i > index
+          );
+          setIndex(nextUntagged);
+        }}
+      >
+        Skip to next untagged
+      </button>
       {applyState ? (
         <div>
           <h4 style={{ color: "red" }}>Unsaved changes</h4>

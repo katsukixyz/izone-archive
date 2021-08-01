@@ -4,11 +4,11 @@ Media streaming platform for IZ\*ONE VLIVE livestreams
 
 ## Structure
 
-The frontend code is located in `client` using Next.js. See `Local Development` for how to run locally.
+The frontend code for the main site is located in `client` using Next.js. See `Local Development` for how to run locally.
 
-The `dogfood` directory is a development environment to sandbox and build out new functionality:
+The `dogfood` directory includes development environments to sandbox and build out new functionality:
 
-- `dogfood/video-tag` is a `create-react-app` application used to manually modify video metadata to integrate video types (VPICK, ENOZI, etc.)
+- `dogfood/video-tag` includes a frontend `create-react-app` application and a backend `Express` service used to manually modify video metadata to integrate video types (VPICK, ENOZI, etc.)
 
 ## Contributions
 
