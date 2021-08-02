@@ -1,7 +1,6 @@
 import React, { useMemo, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import axios from "axios";
-// import meta from "./meta.json";
 import "./App.css";
 
 type VideoMeta = {
@@ -27,15 +26,23 @@ const App: React.FC = () => {
     "Live",
     "VPICK",
     "ENOZI",
-    "Arcade",
     "Promotion",
     "MV",
+    "Cheer Guide",
+    "Making Film",
+    "LieV",
+    "Star Road",
+    "Idol Room",
+    "Greetings",
     "Dance Practice",
+    "Audio Only",
     "Misc",
   ];
+
   const [videoMeta, setVideoMeta] = useState<VideoMeta[]>([]);
   const [index, setIndex] = useState(0);
   const [applyState, setApplyState] = useState(false); //true: unsaved changes
+  const [goToInput, setGoToInput] = useState("");
 
   useEffect(() => {
     axios.get("http://localhost:5000/").then((resp) => {
@@ -61,10 +68,25 @@ const App: React.FC = () => {
         >
           <div className="video">
             <ReactPlayer
+              key={videoMeta[index].id}
               style={{ height: "100%", width: "100%" }}
               light={videoMeta[index].thumbnail}
               url={videoMeta[index].video}
               controls
+              config={{
+                file: {
+                  attributes: {
+                    crossOrigin: "true",
+                    controlsList: "nodownload",
+                  },
+                  tracks: videoMeta[index].subtitles.map((e) => ({
+                    kind: "subtitles",
+                    src: e.url,
+                    srcLang: e.code,
+                    label: e.code,
+                  })),
+                },
+              }}
             />
           </div>
           <h3>{videoMeta[index].title}</h3>
@@ -131,11 +153,47 @@ const App: React.FC = () => {
           const nextUntagged = videoMeta.findIndex(
             (e, i) => e.tags.length === 0 && i > index
           );
-          setIndex(nextUntagged);
+          if (nextUntagged > -1) {
+            setIndex(nextUntagged);
+          }
         }}
       >
         Skip to next untagged
       </button>
+      <div>
+        Skip to next:
+        {tags.map((e) => (
+          <button
+            onClick={() => {
+              const nextTag = videoMeta.findIndex(
+                (video, i) => video.tags.includes(e) && i > index
+              );
+              if (nextTag > -1) {
+                setIndex(nextTag);
+              }
+            }}
+          >
+            {e}
+          </button>
+        ))}
+      </div>
+      <div>
+        Go to video:
+        <input
+          value={goToInput}
+          onChange={(e) => setGoToInput(e.target.value)}
+        />
+        <button
+          onClick={() => {
+            const resultIndex = videoMeta.findIndex((e) => e.id === goToInput);
+            if (resultIndex > -1) {
+              setIndex(resultIndex);
+            }
+          }}
+        >
+          Submit
+        </button>
+      </div>
       {applyState ? (
         <div>
           <h4 style={{ color: "red" }}>Unsaved changes</h4>
