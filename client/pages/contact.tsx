@@ -3,7 +3,7 @@ import Head from "next/head";
 
 const Contact: React.FC = () => {
   return (
-    <div className="contact" style={{ paddingTop: "20px" }}>
+    <div className="contact" style={{ padding: "20px" }}>
       <Head>
         <title>Contact</title>
         <meta property="og:site_name" content="IZ*ONE VLIVE Archive" />
@@ -30,6 +30,11 @@ const Contact: React.FC = () => {
         <p>
           Create a new issue on the{" "}
           <a
+            style={{
+              backgroundColor: "#f8f4f4",
+              padding: "0.3em",
+              borderRadius: 6,
+            }}
             href="https://github.com/katsukixyz/izone-archive/issues"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,6 +48,11 @@ const Contact: React.FC = () => {
         <p>
           For any miscellaneous questions, either leave an issue on{" "}
           <a
+            style={{
+              backgroundColor: "#f8f4f4",
+              padding: "0.3em",
+              borderRadius: 6,
+            }}
             href="https://github.com/katsukixyz/izone-archive/issues"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,7 +60,17 @@ const Contact: React.FC = () => {
             GitHub
           </a>{" "}
           or email me at{" "}
-          <a href="mailto:katsukidotxyz@gmail.com">katsukidotxyz@gmail.com</a>.
+          <a
+            style={{
+              backgroundColor: "#f8f4f4",
+              padding: "0.3em",
+              borderRadius: 6,
+            }}
+            href="mailto:katsukidotxyz@gmail.com"
+          >
+            katsukidotxyz@gmail.com
+          </a>
+          .
         </p>
       </div>
     </div>
