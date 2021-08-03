@@ -5,7 +5,7 @@ import Head from "next/head";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import ReactPlayer from "react-player/lazy";
-import { meta } from "../../src/meta";
+import meta from "../../src/meta.json";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { VideoMeta } from "../../types/types";
 
