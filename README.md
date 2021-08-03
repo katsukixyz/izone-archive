@@ -8,7 +8,7 @@ The frontend code for the main site is located in `client` using Next.js. See `L
 
 The `dogfood` directory includes development environments to sandbox and build out new functionality:
 
-- `dogfood/video-tag` includes a frontend `create-react-app` application and a backend `Express` service used to manually modify video metadata to integrate video types (VPICK, ENOZI, etc.)
+- `dogfood/video-tag` includes a frontend `create-react-app` application and a backend `Express` api to manually modify video metadata like adding/removing video types (VPICK, ENOZI, etc.) via a control panel.
 
 ## Contributions
 

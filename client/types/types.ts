@@ -6,6 +6,7 @@ export type VideoMeta = {
   video: string;
   thumbnail: string;
   subtitles: SubtitleMeta[];
+  tags: string[];
 };
 
 export type SubtitleMeta = {
