@@ -48,7 +48,7 @@ const Video: React.FC<VideoMeta> = ({
           <ArrowLeftOutlined style={{ color: "black" }} />
         </Link>
       </div>
-      <div style={{ paddingTop: "20px" }}>
+      <div style={{ paddingTop: "20px", marginBottom: "1em" }}>
         <div
           className="videoCard"
           style={{
