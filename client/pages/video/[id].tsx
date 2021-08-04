@@ -95,6 +95,23 @@ const Video: React.FC<VideoMeta> = ({
           </div>
         </div>
       </div>
+      <div
+        style={{
+          maxWidth: 1000,
+          padding: "1em",
+          backgroundColor: "#F0BCD3",
+          borderLeftWidth: "0.8em",
+          borderLeftStyle: "solid",
+          borderColor: "#DB679A",
+          borderWidth: 10,
+          textAlign: "center",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      >
+        Tip: Clicking the 3 dots icon on the video player reveals subtitle
+        options.
+      </div>
     </div>
   );
 };

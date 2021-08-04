@@ -44,6 +44,7 @@ const combineFilters = (
   let searchFilteredListData: VideoMeta[];
   let sortFilteredListData: VideoMeta[];
 
+  //tags
   if (tags.length !== 0) {
     //satisfied when VideoMeta item tags includes any user filtered tags (OR)
     tagFilteredListData = data.filter((item) =>
@@ -53,7 +54,7 @@ const combineFilters = (
     tagFilteredListData = data;
   }
 
-  //date first
+  //date
   if (dateRange !== null) {
     dateFilteredListData = tagFilteredListData.filter((item) => {
       if (
@@ -69,7 +70,7 @@ const combineFilters = (
     dateFilteredListData = tagFilteredListData;
   }
 
-  //search next
+  //search
   if (search !== "") {
     searchFilteredListData = dateFilteredListData.filter((item) =>
       item.title.toLowerCase().includes(search)
@@ -78,7 +79,7 @@ const combineFilters = (
     searchFilteredListData = dateFilteredListData;
   }
 
-  //sort last
+  //sort
   if (sort === "asc") {
     sortFilteredListData = searchFilteredListData.sort(
       (a, b) => dayjs(a.date).unix() - dayjs(b.date).unix()

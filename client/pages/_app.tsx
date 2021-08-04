@@ -21,8 +21,7 @@ Router.events.on("routeChangeError", () => nprogress.done());
 interface AppProps {
   Component: any;
   pageProps: {
-    data: VideoMeta[];
-    initListData: VideoMeta[];
+    [key: string]: any;
   };
 }
 
