@@ -5,7 +5,7 @@ import Head from "next/head";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import ReactPlayer from "react-player/lazy";
-import { meta } from "../../src/meta";
+import meta from "../../src/meta.json";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { VideoMeta } from "../../types/types";
 
@@ -48,7 +48,7 @@ const Video: React.FC<VideoMeta> = ({
           <ArrowLeftOutlined style={{ color: "black" }} />
         </Link>
       </div>
-      <div style={{ paddingTop: "20px" }}>
+      <div style={{ paddingTop: "20px", marginBottom: "1em" }}>
         <div
           className="videoCard"
           style={{
@@ -94,6 +94,23 @@ const Video: React.FC<VideoMeta> = ({
             <p>{dayjs.utc(date).local().format("MMMM D YYYY, h:mm:ss A")}</p>
           </div>
         </div>
+      </div>
+      <div
+        style={{
+          maxWidth: 1000,
+          padding: "1em",
+          backgroundColor: "#F0BCD3",
+          borderLeftWidth: "0.8em",
+          borderLeftStyle: "solid",
+          borderColor: "#DB679A",
+          borderWidth: 10,
+          textAlign: "center",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      >
+        Tip: Clicking the 3 dots icon on the video player reveals subtitle
+        options if subtitles are available.
       </div>
     </div>
   );

@@ -8,13 +8,17 @@
   cursor: pointer;
 }
 
+.upButton {
+  bottom: calc(env(safe-area-inset-bottom) + 20px);
+}
+
 .upIcon:hover {
   color: var(--izone-color);
   cursor: pointer;
   transition: 0.3s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .list {
     width: auto;
   }

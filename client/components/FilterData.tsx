@@ -1,36 +1,62 @@
 import React from "react";
+import { useRecoilState, useRecoilValue } from "recoil";
 import Select from "antd/lib/select";
 import DatePicker from "antd/lib/date-picker";
 import Input from "antd/lib/input";
 import dayjs from "dayjs";
 import { VideoMeta } from "../types/types";
+import {
+  filteredListState,
+  dateRangeState,
+  sortState,
+  searchState,
+  tagsState,
+} from "../store";
 const { Option } = Select;
 const { RangePicker } = DatePicker;
 
-interface FilterDataProps {
-  setDateRange: (dateRange: any) => void;
-  setSort: (sort: "asc" | "desc") => void;
-  setSearch: (search: string) => void;
-  setListData: (listData: VideoMeta[]) => void;
-  data: VideoMeta[];
-  dateRange: any;
-  sort: "asc" | "desc";
-  search: string;
-}
+const tagCategories = [
+  "Live",
+  "VPICK",
+  "ENOZI",
+  "Promotion",
+  "MV",
+  "Cheer Guide",
+  "Making Film",
+  "LieV",
+  "Star Road",
+  "Idol Room",
+  "Greetings",
+  "Dance Practice",
+  "Audio Only",
+  "Misc",
+];
 
 const combineFilters = (
   data: VideoMeta[],
-  dateRange: any, //TODO: fix
+  dateRange: any,
   sort: string,
-  search: string
+  search: string,
+  tags: string[]
 ) => {
-  let dateFilteredListData;
-  let searchFilteredListData;
-  let sortFilteredListData;
+  let tagFilteredListData: VideoMeta[];
+  let dateFilteredListData: VideoMeta[];
+  let searchFilteredListData: VideoMeta[];
+  let sortFilteredListData: VideoMeta[];
 
-  //date first
-  if (dateRange != null) {
-    dateFilteredListData = data.filter(function (item) {
+  //tags
+  if (tags.length !== 0) {
+    //satisfied when VideoMeta item tags includes any user filtered tags (OR)
+    tagFilteredListData = data.filter((item) =>
+      tags.some((e) => item.tags.includes(e))
+    );
+  } else {
+    tagFilteredListData = data;
+  }
+
+  //date
+  if (dateRange !== null) {
+    dateFilteredListData = tagFilteredListData.filter((item) => {
       if (
         dayjs
           .utc(item.date)
@@ -41,11 +67,11 @@ const combineFilters = (
       }
     });
   } else {
-    dateFilteredListData = data;
+    dateFilteredListData = tagFilteredListData;
   }
 
-  //search next
-  if (search != "") {
+  //search
+  if (search !== "") {
     searchFilteredListData = dateFilteredListData.filter((item) =>
       item.title.toLowerCase().includes(search)
     );
@@ -53,7 +79,7 @@ const combineFilters = (
     searchFilteredListData = dateFilteredListData;
   }
 
-  //sort last
+  //sort
   if (sort === "asc") {
     sortFilteredListData = searchFilteredListData.sort(
       (a, b) => dayjs(a.date).unix() - dayjs(b.date).unix()
@@ -67,16 +93,12 @@ const combineFilters = (
   return sortFilteredListData;
 };
 
-const FilterData: React.FC<FilterDataProps> = ({
-  setDateRange,
-  setSort,
-  setSearch,
-  setListData,
-  data,
-  dateRange,
-  sort,
-  search,
-}) => {
+const FilterData: React.FC = () => {
+  const { totalResults } = useRecoilValue(filteredListState);
+  const [dateRange, setDateRange] = useRecoilState(dateRangeState);
+  const [sort, setSort] = useRecoilState(sortState);
+  const [tags, setTags] = useRecoilState(tagsState);
+  const [search, setSearch] = useRecoilState(searchState);
   return (
     <div
       className="filter"
@@ -85,14 +107,16 @@ const FilterData: React.FC<FilterDataProps> = ({
         top: 0,
         zIndex: 10,
         backgroundColor: "white",
+        display: "flex",
+        flexWrap: "wrap",
+        flexDirection: "row",
+        alignItems: "center",
       }}
     >
       <RangePicker
         value={dateRange}
         onChange={(value) => {
           setDateRange(value);
-          const sorted = combineFilters(data, value, sort, search).slice(0, 20);
-          setListData(sorted);
         }}
       />
       <Select
@@ -100,11 +124,6 @@ const FilterData: React.FC<FilterDataProps> = ({
         defaultValue="desc"
         onChange={(value) => {
           setSort(value);
-          const sorted = combineFilters(data, dateRange, value, search).slice(
-            0,
-            20
-          );
-          setListData(sorted);
         }}
       >
         <Option value="desc">Most to least recent</Option>
@@ -116,18 +135,33 @@ const FilterData: React.FC<FilterDataProps> = ({
         placeholder="Search titles"
         style={{ width: 200 }}
         onChange={({ target }) => {
-          console.log("called");
           const { value } = target;
           setSearch(value);
-          const sorted = combineFilters(
-            data,
-            dateRange,
-            sort,
-            value.toLowerCase()
-          ).slice(0, 20);
-          setListData(sorted);
         }}
       />
+      <Select
+        mode="multiple"
+        placeholder="Filter by tags"
+        allowClear
+        style={{ width: 200 }}
+        defaultValue={[]}
+        onChange={(value) => {
+          setTags(value);
+        }}
+      >
+        {tagCategories.map((tag) => (
+          <Option key={tag} value={tag}>
+            {tag}
+          </Option>
+        ))}
+      </Select>
+      <div
+        style={{
+          fontWeight: 500,
+          fontSize: 16,
+          paddingLeft: "1em",
+        }}
+      >{`Videos found: ${totalResults}`}</div>
     </div>
   );
 };

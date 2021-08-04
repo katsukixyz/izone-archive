@@ -1,6 +1,7 @@
 .DS_Store
 preprocessing/
-api/
+/yarn.lock
+/package.json
 # Logs
 logs
 *.log
@@ -112,6 +113,7 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.vscode
 
 # yarn v2
 .yarn/cache

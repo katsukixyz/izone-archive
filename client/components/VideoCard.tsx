@@ -19,7 +19,7 @@ const Duration = ({ timestamp }: { timestamp: number }) => {
 };
 
 const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
-  const { id, thumbnail, title, date, duration } = item;
+  const { id, thumbnail, title, date, duration, tags } = item;
   return (
     <div
       className="listCard"
@@ -52,7 +52,23 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
           </a>
         </Link>
         <p>{dayjs.utc(date).local().format("MMMM D YYYY, h:mm:ss A")}</p>
-        <p
+        <div>
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              style={{
+                padding: "4px",
+                marginRight: "0.5em",
+                borderRadius: 4,
+                backgroundColor: "#F0BCD3",
+              }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+        <br />
+        <div
           style={{
             color: "black",
             width: "auto",
@@ -63,7 +79,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
           }}
         >
           <Duration timestamp={duration} />
-        </p>
+        </div>
       </div>
     </div>
   );
