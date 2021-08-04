@@ -110,7 +110,7 @@ const Video: React.FC<VideoMeta> = ({
         }}
       >
         Tip: Clicking the 3 dots icon on the video player reveals subtitle
-        options.
+        options if subtitles are available.
       </div>
     </div>
   );
