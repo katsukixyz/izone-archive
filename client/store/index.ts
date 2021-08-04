@@ -14,6 +14,11 @@ const listDataState = atom({
   default: meta as VideoMeta[],
 });
 
+const tagsState = atom({
+  key: "tagsState",
+  default: [] as string[],
+});
+
 const searchState = atom({
   key: "searchState",
   default: "",
@@ -32,12 +37,19 @@ const renderNumState = atom({
 const filteredListState = selector({
   key: "filteredListState",
   get: ({ get }) => {
-    const dateRange: any = get(dateRangeState);
+    const dateRange = get(dateRangeState);
     const search = get(searchState);
     const sort = get(sortState);
+    const tags = get(tagsState);
     const listData = get(listDataState);
     const renderNum = get(renderNumState);
-    const filteredList = combineFilters([...listData], dateRange, sort, search);
+    const filteredList = combineFilters(
+      [...listData],
+      dateRange,
+      sort,
+      search,
+      tags
+    );
     return {
       filteredList: filteredList.slice(0, renderNum),
       totalResults: filteredList.length,
@@ -47,6 +59,7 @@ const filteredListState = selector({
 
 export {
   dateRangeState,
+  tagsState,
   listDataState,
   searchState,
   sortState,

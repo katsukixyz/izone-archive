@@ -10,23 +10,52 @@ import {
   dateRangeState,
   sortState,
   searchState,
+  tagsState,
 } from "../store";
 const { Option } = Select;
 const { RangePicker } = DatePicker;
+
+const tagCategories = [
+  "Live",
+  "VPICK",
+  "ENOZI",
+  "Promotion",
+  "MV",
+  "Cheer Guide",
+  "Making Film",
+  "LieV",
+  "Star Road",
+  "Idol Room",
+  "Greetings",
+  "Dance Practice",
+  "Audio Only",
+  "Misc",
+];
 
 const combineFilters = (
   data: VideoMeta[],
   dateRange: any,
   sort: string,
-  search: string
+  search: string,
+  tags: string[]
 ) => {
-  let dateFilteredListData;
-  let searchFilteredListData;
-  let sortFilteredListData;
+  let tagFilteredListData: VideoMeta[];
+  let dateFilteredListData: VideoMeta[];
+  let searchFilteredListData: VideoMeta[];
+  let sortFilteredListData: VideoMeta[];
+
+  if (tags.length !== 0) {
+    //satisfied when VideoMeta item tags includes any user filtered tags (OR)
+    tagFilteredListData = data.filter((item) =>
+      tags.some((e) => item.tags.includes(e))
+    );
+  } else {
+    tagFilteredListData = data;
+  }
 
   //date first
   if (dateRange !== null) {
-    dateFilteredListData = data.filter(function (item) {
+    dateFilteredListData = tagFilteredListData.filter((item) => {
       if (
         dayjs
           .utc(item.date)
@@ -37,7 +66,7 @@ const combineFilters = (
       }
     });
   } else {
-    dateFilteredListData = data;
+    dateFilteredListData = tagFilteredListData;
   }
 
   //search next
@@ -67,6 +96,7 @@ const FilterData: React.FC = () => {
   const { totalResults } = useRecoilValue(filteredListState);
   const [dateRange, setDateRange] = useRecoilState(dateRangeState);
   const [sort, setSort] = useRecoilState(sortState);
+  const [tags, setTags] = useRecoilState(tagsState);
   const [search, setSearch] = useRecoilState(searchState);
   return (
     <div
@@ -77,6 +107,7 @@ const FilterData: React.FC = () => {
         zIndex: 10,
         backgroundColor: "white",
         display: "flex",
+        flexWrap: "wrap",
         flexDirection: "row",
         alignItems: "center",
       }}
@@ -107,6 +138,22 @@ const FilterData: React.FC = () => {
           setSearch(value);
         }}
       />
+      <Select
+        mode="multiple"
+        placeholder="Filter by tags"
+        allowClear
+        style={{ width: 200 }}
+        defaultValue={[]}
+        onChange={(value) => {
+          setTags(value);
+        }}
+      >
+        {tagCategories.map((tag) => (
+          <Option key={tag} value={tag}>
+            {tag}
+          </Option>
+        ))}
+      </Select>
       <div
         style={{
           fontWeight: 500,

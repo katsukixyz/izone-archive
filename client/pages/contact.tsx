@@ -23,7 +23,6 @@ const Contact: React.FC = () => {
           border: "0px",
           boxShadow:
             "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-          // backgroundColor: "#F8F8F8",
         }}
       >
         <h3>Issues with the site/feature suggestions</h3>
