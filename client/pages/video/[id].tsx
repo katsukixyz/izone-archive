@@ -89,28 +89,44 @@ const Video: React.FC<VideoMeta> = ({
             />
           </div>
 
-          <div className="cardMeta" style={{ paddingTop: "20px" }}>
+          <div
+            className="cardMeta"
+            style={{ width: "100%", paddingTop: "20px" }}
+          >
             <p style={{ fontSize: 22, fontWeight: 500 }}>{title}</p>
             <p>{dayjs.utc(date).local().format("MMMM D YYYY, h:mm:ss A")}</p>
+            {subtitles.length !== 0 ? (
+              <div
+                style={{
+                  padding: "1em",
+                  backgroundColor: "#F0BCD3",
+                  borderLeftWidth: "0.8em",
+                  borderLeftStyle: "solid",
+                  borderColor: "#DB679A",
+                  borderWidth: 10,
+                  textAlign: "center",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              >
+                The following subtitles are available for this video:{" "}
+                {subtitles.map((sub) => (
+                  <span
+                    style={{
+                      display: "inline-block",
+                      padding: "0.2em",
+                      borderRadius: 6,
+                      backgroundColor: "#f8f4f4",
+                      marginRight: "0.2em",
+                    }}
+                  >
+                    {sub.code}
+                  </span>
+                ))}
+              </div>
+            ) : null}
           </div>
         </div>
-      </div>
-      <div
-        style={{
-          maxWidth: 1000,
-          padding: "1em",
-          backgroundColor: "#F0BCD3",
-          borderLeftWidth: "0.8em",
-          borderLeftStyle: "solid",
-          borderColor: "#DB679A",
-          borderWidth: 10,
-          textAlign: "center",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
-        Tip: Clicking the 3 dots icon on the video player reveals subtitle
-        options if subtitles are available.
       </div>
     </div>
   );
