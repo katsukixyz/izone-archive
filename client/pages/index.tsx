@@ -60,7 +60,18 @@ const VideoList: React.FC<VideoListProps> = () => {
         />
       </Head>
 
-      <FilterData />
+      <div
+        style={{
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          position: "sticky",
+          zIndex: 10,
+          top: 0,
+        }}
+      >
+        <FilterData />
+      </div>
 
       {buttonVis ? (
         <div

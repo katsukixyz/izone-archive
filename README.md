@@ -1,3 +1,6 @@
+<a href = "https://izonev.live">
+<img height = 80 src = "https://raw.githubusercontent.com/katsukixyz/izone-archive/main/client/public/logo.svg" /> </a>
+
 # IZ\*ONE VLIVE Archive
 
 Media streaming platform for IZ\*ONE VLIVE livestreams
