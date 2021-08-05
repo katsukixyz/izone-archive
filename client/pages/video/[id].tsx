@@ -110,8 +110,9 @@ const Video: React.FC<VideoMeta> = ({
                 }}
               >
                 The following subtitles are available for this video:{" "}
-                {subtitles.map((sub) => (
+                {subtitles.map(({ code }) => (
                   <span
+                    key={code}
                     style={{
                       display: "inline-block",
                       padding: "0.2em",
@@ -120,7 +121,7 @@ const Video: React.FC<VideoMeta> = ({
                       marginRight: "0.2em",
                     }}
                   >
-                    {sub.code}
+                    {code}
                   </span>
                 ))}
               </div>
