@@ -145,6 +145,7 @@ const FilterData: React.FC = () => {
         allowClear
         style={{ width: 200 }}
         defaultValue={[]}
+        value={tags}
         onChange={(value) => {
           setTags(value);
         }}
