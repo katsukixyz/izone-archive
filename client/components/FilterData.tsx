@@ -103,14 +103,12 @@ const FilterData: React.FC = () => {
     <div
       className="filter"
       style={{
-        position: "sticky",
-        top: 0,
-        zIndex: 10,
         backgroundColor: "white",
         display: "flex",
         flexWrap: "wrap",
         flexDirection: "row",
         alignItems: "center",
+        padding: "20px",
       }}
     >
       <RangePicker
