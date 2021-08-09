@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Maintenance</title>
-  </head>
-  <body>
-    <div>
-      <h1>404: Page not found</h1>
-      <h4>The page requested is currently undergoing maintenance.</h4>
-    </div>
-  </body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Maintenance</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-size: 16px;
+                font-family: "Montserrat", sans-serif;
+            }
+            .container {
+                min-width: 100vw;
+                min-height: 100vh;
+                background-image: url("./images/izone-bg.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;				
+            }
+            .title {
+                text-transform: uppercase;
+                color: white;
+				margin-bottom: 5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Vlive Site is undergoing maintenance</h1>
+        </div>
+    </body>
 </html>
