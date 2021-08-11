@@ -15,7 +15,7 @@ The `dogfood` directory includes development environments to sandbox and build o
 
 ## Contributions
 
-This project is open to contributions! Please see [CONTRIBUTING.md](https://github.com/katsukixyz/izone-archive/blob/main/CONTRIBUTING.md) for guidelines.
+This project is open to contributions! Please see [CONTRIBUTING.md](https://github.com/katsukixyz/izone-archive/blob/prod/CONTRIBUTING.md) for guidelines.
 
 ## Local development
 

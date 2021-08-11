@@ -1,7 +1,7 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import Head from "next/head";
-import FilterData, { combineFilters } from "../components/FilterData";
+import FilterData from "../components/FilterData";
 import dayjs from "dayjs";
 import isBetween from "dayjs/plugin/isBetween";
 import utc from "dayjs/plugin/utc";
@@ -62,9 +62,9 @@ const VideoList: React.FC<VideoListProps> = () => {
 
       <div
         style={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
           position: "sticky",
           zIndex: 10,
           top: 0,

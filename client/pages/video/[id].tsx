@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import ReactPlayer from "react-player/lazy";
 import meta from "../../src/meta.json";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { VideoMeta } from "../../types/types";
+import { useRecoilValue } from "recoil";
+import AutoplayContext from "../../contexts/AutoplayContext";
 
 dayjs.extend(utc);
 
@@ -20,6 +23,7 @@ const Video: React.FC<VideoMeta> = ({
 }) => {
   const router = useRouter();
   const { id } = router.query;
+  const { autoplay } = useContext(AutoplayContext);
 
   return (
     <div style={{ padding: "20px" }}>
@@ -67,7 +71,7 @@ const Video: React.FC<VideoMeta> = ({
         >
           <div>
             <ReactPlayer
-              playing
+              playing={autoplay}
               url={video}
               width="100%"
               height="100%"
