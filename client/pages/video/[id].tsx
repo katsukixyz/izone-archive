@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
 import dynamic from "next/dynamic";
@@ -9,7 +8,6 @@ import ReactPlayer from "react-player/lazy";
 import meta from "../../src/meta.json";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { VideoMeta } from "../../types/types";
-import { useRecoilValue } from "recoil";
 import AutoplayContext from "../../contexts/AutoplayContext";
 
 dayjs.extend(utc);
@@ -21,8 +19,6 @@ const Video: React.FC<VideoMeta> = ({
   thumbnail,
   subtitles,
 }) => {
-  const router = useRouter();
-  const { id } = router.query;
   const { autoplay } = useContext(AutoplayContext);
 
   return (
@@ -34,6 +30,10 @@ const Video: React.FC<VideoMeta> = ({
         <meta property="og:title" content={title} />
         <meta
           property="og:description"
+          content={`${dayjs.utc(date).format("YYYY-MM-DD")}`}
+        />
+        <meta
+          property="description"
           content={`${dayjs.utc(date).format("YYYY-MM-DD")}`}
         />
       </Head>
@@ -106,6 +106,9 @@ const Video: React.FC<VideoMeta> = ({
                   backgroundColor: "#F0BCD3",
                   borderLeftWidth: "0.8em",
                   borderLeftStyle: "solid",
+                  borderTopStyle: "hidden",
+                  borderRightStyle: "hidden",
+                  borderBottomStyle: "hidden",
                   borderColor: "#DB679A",
                   borderWidth: 10,
                   textAlign: "center",

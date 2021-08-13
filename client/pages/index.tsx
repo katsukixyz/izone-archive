@@ -11,6 +11,7 @@ import meta from "../src/meta.json";
 import { VideoMeta } from "../types/types";
 import VideoCard from "../components/VideoCard";
 import { IoChevronUp } from "react-icons/io5";
+import { Box, Center, Heading, Stack } from "@chakra-ui/react";
 
 dayjs.extend(isBetween);
 dayjs.extend(utc);
@@ -49,7 +50,7 @@ const VideoList: React.FC<VideoListProps> = () => {
   }, []);
 
   return (
-    <div className="app">
+    <Box p="6">
       <Head>
         <title>IZ*ONE VLIVE Archive</title>
         <meta property="og:site_name" content="IZ*ONE VLIVE Archive" />
@@ -58,9 +59,13 @@ const VideoList: React.FC<VideoListProps> = () => {
           property="og:description"
           content={`View all ${meta.length} archived videos of IZ*ONE's VLIVE channel.`}
         />
+        <meta
+          property="description"
+          content={`View all ${meta.length} archived videos of IZ*ONE's VLIVE channel.`}
+        />
       </Head>
 
-      <div
+      {/* <div
         style={{
           width: "100%",
           display: "flex",
@@ -71,7 +76,31 @@ const VideoList: React.FC<VideoListProps> = () => {
         }}
       >
         <FilterData />
-      </div>
+      </div> */}
+
+      <Center>
+        <Stack direction="column" spacing="4" maxW="1000px" align="start">
+          <Heading>VLIVE Archive</Heading>
+          <InfiniteScroll
+            dataLength={filteredList ? filteredList.length : 0}
+            hasMore={true}
+            scrollThreshold={1}
+            next={fetchNextData}
+            scrollableTarget="app"
+            loader={null}
+          >
+            {/* <div className="list"> */}
+            <Stack direction="column" spacing="2" ml="1.5" mr="1.5">
+              {filteredList.map((item) => (
+                <Box key={item.id}>
+                  <VideoCard item={item} />
+                </Box>
+              ))}
+            </Stack>
+            {/* </div> */}
+          </InfiniteScroll>
+        </Stack>
+      </Center>
 
       {buttonVis ? (
         <div
@@ -95,33 +124,8 @@ const VideoList: React.FC<VideoListProps> = () => {
         </div>
       ) : null}
 
-      <InfiniteScroll
-        dataLength={filteredList ? filteredList.length : 0}
-        hasMore={true}
-        scrollThreshold={1}
-        next={fetchNextData}
-        scrollableTarget="app"
-        loader={null}
-      >
-        <div
-          className="list"
-          style={{
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        >
-          {filteredList.map((item) => (
-            <div
-              key={item.id}
-              style={{ paddingTop: "5px", paddingBottom: "5px" }}
-            >
-              <VideoCard item={item} />
-            </div>
-          ))}
-        </div>
-      </InfiniteScroll>
-    </div>
+      {/* </div> */}
+    </Box>
   );
 };
 
