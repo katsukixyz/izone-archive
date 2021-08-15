@@ -12,7 +12,7 @@ import CustomNav from "../components/CustomNav";
 
 const theme = extendTheme({
   colors: {
-    brand: { 500: "#F0BCD3", 900: "#DB679A" },
+    brand: { 200: "#F0BCD3", 500: "#DB679A" },
   },
 });
 

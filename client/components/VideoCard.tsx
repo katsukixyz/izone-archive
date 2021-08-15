@@ -56,7 +56,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
             fontWeight="medium"
             _hover={{
               cursor: "pointer",
-              color: "brand.900",
+              color: "brand.500",
               transition: "0.3s",
               // transitionProperty: "",
               // transitionTimingFunction: "ease-in-out",
@@ -70,7 +70,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
         </Text>
         <Box mt="2">
           {tags.map((tag) => (
-            <Tag key={tag} bg="brand.500">
+            <Tag key={tag} bg="brand.200">
               {tag}
             </Tag>
           ))}

@@ -37,6 +37,7 @@ const Pref: React.FC = () => {
               onChange={toggleAutoplay}
               size="md"
               colorScheme="brand"
+              // color="brand.900"
             />
           </Flex>
         </Stack>
