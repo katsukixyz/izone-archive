@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                   Github
                 </Tag>
               </Link>{" "}
-              or email me at
+              or email me at{" "}
               <Link
                 href="mailto:katsukidotxyz@gmail.com"
                 isExternal

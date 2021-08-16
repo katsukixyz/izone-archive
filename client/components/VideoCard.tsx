@@ -32,19 +32,15 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
     >
       <ChakraLink as={Link} href={`/video/${id}`}>
         <Box
-          minH="200"
           pos="relative"
           w={{ base: "100%", md: "40%" }}
-          pb={{ base: "56.25%", md: "0" }}
           mb={{ base: "3", md: "0" }}
           _hover={{
             cursor: "pointer",
           }}
         >
-          <Box>
-            <Image src={thumbnail} objectFit="contain" layout="fill" />
-          </Box>
-          <Tag pos="absolute" bottom="3" right="1">
+          <Image width="368" height="207" src={thumbnail} layout="responsive" />
+          <Tag pos="absolute" right="1" bottom="1" zIndex="10">
             {Duration({ duration })}
           </Tag>
         </Box>
@@ -58,8 +54,6 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
               cursor: "pointer",
               color: "brand.500",
               transition: "0.3s",
-              // transitionProperty: "",
-              // transitionTimingFunction: "ease-in-out",
             }}
           >
             {title}
