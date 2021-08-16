@@ -89,7 +89,6 @@ const VideoList: React.FC<VideoListProps> = () => {
             scrollableTarget="app"
             loader={null}
           >
-            {/* <div className="list"> */}
             <Stack direction="column" spacing="2" ml="1.5" mr="1.5">
               {filteredList.map((item) => (
                 <Box key={item.id}>
@@ -97,7 +96,6 @@ const VideoList: React.FC<VideoListProps> = () => {
                 </Box>
               ))}
             </Stack>
-            {/* </div> */}
           </InfiniteScroll>
         </Stack>
       </Center>
@@ -123,8 +121,6 @@ const VideoList: React.FC<VideoListProps> = () => {
           </a>
         </div>
       ) : null}
-
-      {/* </div> */}
     </Box>
   );
 };
