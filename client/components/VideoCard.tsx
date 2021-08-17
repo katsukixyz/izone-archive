@@ -1,7 +1,7 @@
 import React from "react";
 import { VideoMeta } from "../types/types";
 import Link from "next/link";
-import { Box, Link as ChakraLink, Tag, Text } from "@chakra-ui/react";
+import { Box, Link as ChakraLink, Stack, Tag, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import dayjs from "dayjs";
 
@@ -39,7 +39,13 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
             cursor: "pointer",
           }}
         >
-          <Image width="368" height="207" src={thumbnail} layout="responsive" />
+          <Image
+            width="368"
+            height="207"
+            src={thumbnail}
+            layout="responsive"
+            objectFit="contain"
+          />
           <Tag pos="absolute" right="1" bottom="1" zIndex="10">
             {Duration({ duration })}
           </Tag>
@@ -62,13 +68,13 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
         <Text mt="2" fontSize="md">
           {dayjs.utc(date).local().format("MMMM D YYYY, h:mm:ss A")}
         </Text>
-        <Box mt="2">
+        <Stack direction="row" mt="2">
           {tags.map((tag) => (
             <Tag key={tag} bg="brand.200">
               {tag}
             </Tag>
           ))}
-        </Box>
+        </Stack>
       </Box>
     </Box>
   );
