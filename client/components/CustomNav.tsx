@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link as NextLink } from "next";
 import Link from "next/link";
 import {
   Box,
@@ -12,11 +11,7 @@ import {
   Collapse,
   Icon,
   Link as ChakraLink,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
   useColorModeValue, //used for dark mode (future?)
-  useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import {
@@ -50,12 +45,16 @@ const CustomNav: React.FC = () => {
             }
             variant={"unstyled"}
             bg="gray.800"
-            _hover={{ color: "gray.400" }}
+            _hover={{ color: "gray.400", transition: "0.3s" }}
             color="gray.500"
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        <Flex
+          flex={{ base: 1 }}
+          mr={{ base: 6 }}
+          justify={{ base: "center", md: "start" }}
+        >
           <ChakraLink as={Link} href="/">
             <Image
               src="/logo.svg"
@@ -93,6 +92,7 @@ const DesktopNav = () => {
           _hover={{
             textDecoration: "none",
             color: "gray.400",
+            transition: "0.3s",
             cursor: "pointer",
           }}
         />
@@ -110,6 +110,7 @@ const DesktopNav = () => {
           _hover={{
             textDecoration: "none",
             color: "gray.400",
+            transition: "0.3s",
             cursor: "pointer",
           }}
         />
@@ -122,6 +123,7 @@ const DesktopNav = () => {
           _hover={{
             textDecoration: "none",
             color: "gray.400",
+            transition: "0.3s",
             cursor: "pointer",
           }}
         />

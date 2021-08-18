@@ -10,24 +10,17 @@ import { filteredListState, renderNumState } from "../store/index";
 import meta from "../src/meta.json";
 import { VideoMeta } from "../types/types";
 import VideoCard from "../components/VideoCard";
-import { IoChevronUp } from "react-icons/io5";
 import {
-  Text,
   Box,
   Button,
   Center,
-  Drawer,
-  DrawerBody,
-  DrawerCloseButton,
-  DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
   Flex,
   Heading,
   Stack,
   useDisclosure,
+  IconButton,
 } from "@chakra-ui/react";
+import { ChevronUpIcon } from "@chakra-ui/icons";
 
 dayjs.extend(isBetween);
 dayjs.extend(utc);
@@ -129,25 +122,17 @@ const VideoList: React.FC<VideoListProps> = () => {
         </Center>
 
         {buttonVis ? (
-          <div
-            className="upButton"
+          <IconButton
             onClick={scrollToTop}
-            style={{
-              position: "fixed",
-              right: "4%",
-              zIndex: 1,
-              padding: "8px",
-              borderRadius: 100,
-              backgroundColor: "#f8f4f4",
-              border: "0px",
-              boxShadow:
-                "0 5px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-            }}
-          >
-            <a>
-              <IoChevronUp className="upIcon" size={24} />
-            </a>
-          </div>
+            colorScheme="brand"
+            pos="fixed"
+            bottom="10"
+            right="8"
+            zIndex="20"
+            aria-label="Scroll to top"
+            _hover={{ bg: "brand.200", transition: "0.3s" }}
+            icon={<ChevronUpIcon fontSize="20" />}
+          />
         ) : null}
       </Box>
     </>
