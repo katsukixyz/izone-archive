@@ -178,11 +178,7 @@ const FilterData: React.FC<FilterDataProps> = ({
               ))}
             </Select>
           </Stack>
-          {/* <Text>joe</Text> */}
         </DrawerBody>
-        {/* <DrawerFooter>
-          <Text>joe</Text>
-        </DrawerFooter> */}
       </DrawerContent>
     </Drawer>
   );
@@ -190,22 +186,3 @@ const FilterData: React.FC<FilterDataProps> = ({
 
 export { combineFilters };
 export default FilterData;
-//  <div
-//    className="filter"
-//    style={{
-//      backgroundColor: "white",
-//      display: "flex",
-//      flexWrap: "wrap",
-//      flexDirection: "row",
-//      alignItems: "center",
-//      padding: "20px",
-//    }}
-//  >
-//    <div
-//      style={{
-//        fontWeight: 500,
-//        fontSize: 16,
-//        paddingLeft: "1em",
-//      }}
-//    >{`Videos found: ${totalResults}`}</div>
-//  </div>

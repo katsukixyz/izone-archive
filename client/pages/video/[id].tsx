@@ -7,7 +7,14 @@ import ReactPlayer from "react-player/lazy";
 import meta from "../../src/meta.json";
 import { VideoMeta } from "../../types/types";
 import AutoplayContext from "../../contexts/AutoplayContext";
-import { Box, Center, Link as ChakraLink, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Link as ChakraLink,
+  Stack,
+  Tag,
+  Text,
+} from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 
 dayjs.extend(utc);
@@ -103,20 +110,13 @@ const Video: React.FC<VideoMeta> = ({
                   >
                     <Box padding="3">
                       The following subtitles are available for this video:{" "}
-                      {subtitles.map(({ code }) => (
-                        <span
-                          key={code}
-                          style={{
-                            display: "inline-block",
-                            padding: "0.2em",
-                            borderRadius: 6,
-                            backgroundColor: "#f8f4f4",
-                            marginRight: "0.2em",
-                          }}
-                        >
-                          {code}
-                        </span>
-                      ))}
+                      <Stack direction="row" display="inline-block" spacing={1}>
+                        {subtitles.map(({ code }) => (
+                          <Tag size="sm" key={code}>
+                            {code}
+                          </Tag>
+                        ))}
+                      </Stack>
                     </Box>
                   </Center>
                 ) : null}
