@@ -12,6 +12,15 @@ import {
   searchState,
   tagsState,
 } from "../store";
+import {
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
+  Stack,
+} from "@chakra-ui/react";
 const { Option } = Select;
 const { RangePicker } = DatePicker;
 
@@ -44,9 +53,9 @@ const combineFilters = (
   let searchFilteredListData: VideoMeta[];
   let sortFilteredListData: VideoMeta[];
 
-  //tags
+  // tags
   if (tags.length !== 0) {
-    //satisfied when VideoMeta item tags includes any user filtered tags (OR)
+    // satisfied when VideoMeta item tags includes any user filtered tags (OR)
     tagFilteredListData = data.filter((item) =>
       tags.some((e) => item.tags.includes(e))
     );
@@ -54,7 +63,7 @@ const combineFilters = (
     tagFilteredListData = data;
   }
 
-  //date
+  // date
   if (dateRange !== null) {
     dateFilteredListData = tagFilteredListData.filter((item) => {
       if (
@@ -70,7 +79,7 @@ const combineFilters = (
     dateFilteredListData = tagFilteredListData;
   }
 
-  //search
+  // search
   if (search !== "") {
     searchFilteredListData = dateFilteredListData.filter((item) =>
       item.title.toLowerCase().includes(search)
@@ -79,7 +88,7 @@ const combineFilters = (
     searchFilteredListData = dateFilteredListData;
   }
 
-  //sort
+  // sort
   if (sort === "asc") {
     sortFilteredListData = searchFilteredListData.sort(
       (a, b) => dayjs(a.date).unix() - dayjs(b.date).unix()
@@ -93,75 +102,85 @@ const combineFilters = (
   return sortFilteredListData;
 };
 
-const FilterData: React.FC = () => {
+interface FilterDataProps {
+  filterButtonRef: React.RefObject<HTMLButtonElement>;
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const FilterData: React.FC<FilterDataProps> = ({
+  filterButtonRef,
+  isOpen,
+  onClose,
+}) => {
   const { totalResults } = useRecoilValue(filteredListState);
   const [dateRange, setDateRange] = useRecoilState(dateRangeState);
   const [sort, setSort] = useRecoilState(sortState);
   const [tags, setTags] = useRecoilState(tagsState);
   const [search, setSearch] = useRecoilState(searchState);
   return (
-    <div
-      className="filter"
-      style={{
-        backgroundColor: "white",
-        display: "flex",
-        flexWrap: "wrap",
-        flexDirection: "row",
-        alignItems: "center",
-        padding: "20px",
-      }}
+    <Drawer
+      isOpen={isOpen}
+      placement="right"
+      onClose={onClose}
+      finalFocusRef={filterButtonRef}
     >
-      <RangePicker
-        value={dateRange}
-        onChange={(value) => {
-          setDateRange(value);
-        }}
-      />
-      <Select
-        value={sort}
-        defaultValue="desc"
-        onChange={(value) => {
-          setSort(value);
-        }}
-      >
-        <Option value="desc">Most to least recent</Option>
-        <Option value="asc">Least to most recent</Option>
-      </Select>
-      <Input
-        allowClear
-        value={search}
-        placeholder="Search titles"
-        style={{ width: 200 }}
-        onChange={({ target }) => {
-          const { value } = target;
-          setSearch(value);
-        }}
-      />
-      <Select
-        mode="multiple"
-        placeholder="Filter by tags"
-        allowClear
-        style={{ width: 200 }}
-        defaultValue={[]}
-        value={tags}
-        onChange={(value) => {
-          setTags(value);
-        }}
-      >
-        {tagCategories.map((tag) => (
-          <Option key={tag} value={tag}>
-            {tag}
-          </Option>
-        ))}
-      </Select>
-      <div
-        style={{
-          fontWeight: 500,
-          fontSize: 16,
-          paddingLeft: "1em",
-        }}
-      >{`Videos found: ${totalResults}`}</div>
-    </div>
+      <DrawerOverlay />
+      <DrawerContent>
+        <DrawerCloseButton />
+        <DrawerHeader>{`Videos found: ${totalResults}`}</DrawerHeader>
+        <DrawerBody>
+          <Stack direction="column">
+            <RangePicker
+              getPopupContainer={(node) => node.parentElement!}
+              value={dateRange}
+              onChange={(value) => {
+                setDateRange(value);
+              }}
+            />
+            <Select
+              getPopupContainer={(node) => node.parentElement!}
+              value={sort}
+              defaultValue="desc"
+              onChange={(value) => {
+                setSort(value);
+              }}
+            >
+              <Option value="desc">Most to least recent</Option>
+              <Option value="asc">Least to most recent</Option>
+            </Select>
+            <Input
+              allowClear
+              value={search}
+              placeholder="Search titles"
+              style={{ width: 200 }}
+              onChange={({ target }) => {
+                const { value } = target;
+                setSearch(value);
+              }}
+            />
+            <Select
+              getPopupContainer={(node) => node.parentElement!}
+              mode="multiple"
+              placeholder="Filter by tags"
+              allowClear
+              style={{ width: 200 }}
+              defaultValue={[]}
+              value={tags}
+              onChange={(value) => {
+                setTags(value);
+              }}
+            >
+              {tagCategories.map((tag) => (
+                <Option key={tag} value={tag}>
+                  {tag}
+                </Option>
+              ))}
+            </Select>
+          </Stack>
+        </DrawerBody>
+      </DrawerContent>
+    </Drawer>
   );
 };
 
