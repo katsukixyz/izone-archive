@@ -115,7 +115,9 @@ const VideoList: React.FC<VideoListProps> = () => {
           >
             <Stack direction="column" spacing="2" ml="1.5" mr="1.5">
               {filteredList.map((item) => (
-                <VideoCard key={item.id} item={item} />
+                <Box key={item.id} maxW="860">
+                  <VideoCard item={item} />
+                </Box>
               ))}
             </Stack>
           </InfiniteScroll>
