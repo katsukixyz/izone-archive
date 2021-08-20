@@ -110,7 +110,7 @@ const Video: React.FC<VideoMeta> = ({
                   >
                     <Box padding="3">
                       The following subtitles are available for this video:{" "}
-                      <Stack direction="row" display="inline-block" spacing={1}>
+                      <Stack direction="row" display="inline" spacing={1}>
                         {subtitles.map(({ code }) => (
                           <Tag size="sm" key={code}>
                             {code}
