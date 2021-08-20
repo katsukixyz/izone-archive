@@ -19,6 +19,7 @@ import {
   Stack,
   useDisclosure,
   IconButton,
+  Spacer,
 } from "@chakra-ui/react";
 import { ChevronUpIcon } from "@chakra-ui/icons";
 
@@ -84,41 +85,40 @@ const VideoList: React.FC<VideoListProps> = () => {
           onClose={onClose}
         />
 
-        <Center>
-          <Stack direction="column" spacing="4" maxW="1000px" align="start">
-            <Flex
-              w="100%"
-              direction="row"
-              justify="space-between"
-              align="center"
+        <Center flexDirection="column">
+          <Flex
+            w="100%"
+            maxW="860"
+            mb="4"
+            direction="row"
+            justify="space-between"
+            align="center"
+          >
+            <Heading>VLIVE Archive</Heading>
+            <Spacer />
+            <Button
+              ref={filterButtonRef}
+              onClick={onOpen}
+              colorScheme="brand"
+              _hover={{ bgColor: "brand.200" }}
             >
-              <Heading>VLIVE Archive</Heading>
-              <Button
-                ref={filterButtonRef}
-                onClick={onOpen}
-                colorScheme="brand"
-                _hover={{ bgColor: "brand.200" }}
-              >
-                Filter
-              </Button>
-            </Flex>
-            <InfiniteScroll
-              dataLength={filteredList ? filteredList.length : 0}
-              hasMore={true}
-              scrollThreshold={1}
-              next={fetchNextData}
-              scrollableTarget="app"
-              loader={null}
-            >
-              <Stack direction="column" spacing="2" ml="1.5" mr="1.5">
-                {filteredList.map((item) => (
-                  <Box key={item.id}>
-                    <VideoCard item={item} />
-                  </Box>
-                ))}
-              </Stack>
-            </InfiniteScroll>
-          </Stack>
+              Filter
+            </Button>
+          </Flex>
+          <InfiniteScroll
+            dataLength={filteredList ? filteredList.length : 0}
+            hasMore={true}
+            scrollThreshold={1}
+            next={fetchNextData}
+            scrollableTarget="app"
+            loader={null}
+          >
+            <Stack direction="column" spacing="2" ml="1.5" mr="1.5">
+              {filteredList.map((item) => (
+                <VideoCard key={item.id} item={item} />
+              ))}
+            </Stack>
+          </InfiniteScroll>
         </Center>
 
         {buttonVis ? (
