@@ -113,7 +113,7 @@ const VideoList: React.FC<VideoListProps> = () => {
             scrollableTarget="app"
             loader={null}
           >
-            <Stack direction="column" spacing="2" ml="1.5" mr="1.5">
+            <Stack direction="column" spacing="2" ml="1.5" mr="1.5" mb="4">
               {filteredList.map((item) => (
                 <Box key={item.id} maxW="860">
                   <VideoCard item={item} />
