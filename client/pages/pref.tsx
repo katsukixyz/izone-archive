@@ -27,7 +27,9 @@ const Pref: React.FC = () => {
           <Flex direction="row" justify="space-between" align="center">
             <Box d="flex" alignItems="baseline">
               <Tag size="lg">Autoplay</Tag>
-              <Text ml="2">Play videos automatically on page load</Text>
+              <Text display={{ base: "none", md: "inherit" }} ml="2">
+                Play videos automatically on page load
+              </Text>
             </Box>
             <Switch
               isChecked={autoplay}
