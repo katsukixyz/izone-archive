@@ -88,7 +88,7 @@ const VideoList: React.FC<VideoListProps> = () => {
         <Center flexDirection="column">
           <Flex
             w="100%"
-            maxW="860"
+            maxW="860px"
             mb="4"
             direction="row"
             justify="space-between"
@@ -105,22 +105,24 @@ const VideoList: React.FC<VideoListProps> = () => {
               Filter
             </Button>
           </Flex>
-          <InfiniteScroll
-            dataLength={filteredList ? filteredList.length : 0}
-            hasMore={true}
-            scrollThreshold={1}
-            next={fetchNextData}
-            scrollableTarget="app"
-            loader={null}
-          >
-            <Stack direction="column" spacing="2" ml="1.5" mr="1.5">
-              {filteredList.map((item) => (
-                <Box key={item.id} maxW="860">
-                  <VideoCard item={item} />
-                </Box>
-              ))}
-            </Stack>
-          </InfiniteScroll>
+          <Box w="100%" maxW="860px">
+            <InfiniteScroll
+              dataLength={filteredList ? filteredList.length : 0}
+              hasMore={true}
+              scrollThreshold={1}
+              next={fetchNextData}
+              scrollableTarget="app"
+              loader={null}
+            >
+              <Stack direction="column" spacing="2" ml="1.5" mr="1.5" mb="4">
+                {filteredList.map((item) => (
+                  <Box key={item.id} w="100%">
+                    <VideoCard item={item} />
+                  </Box>
+                ))}
+              </Stack>
+            </InfiniteScroll>
+          </Box>
         </Center>
 
         {buttonVis ? (
