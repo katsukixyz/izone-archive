@@ -5,7 +5,6 @@ import { SortOption, TagOption, VideoMeta } from "../types/types";
 
 const dateRangeState = atom({
   key: "dateRangeState",
-  // default: [null, null] as [Date | null, Date | null],
   default: ["", ""] as [string, string],
 });
 

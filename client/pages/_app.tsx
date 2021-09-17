@@ -8,7 +8,6 @@ import "../styles/nprogress.css";
 import Head from "next/head";
 import AutoplayContext from "../contexts/AutoplayContext";
 import CustomNav from "../components/CustomNav";
-import "react-datepicker/dist/react-datepicker.css";
 
 const theme = extendTheme({
   colors: {
