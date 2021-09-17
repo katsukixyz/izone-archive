@@ -1,11 +1,12 @@
 import { atom, selector } from "recoil";
 import { combineFilters } from "../components/FilterData";
 import meta from "../src/meta.json";
-import { VideoMeta } from "../types/types";
+import { SortOption, TagOption, VideoMeta } from "../types/types";
 
 const dateRangeState = atom({
   key: "dateRangeState",
-  default: null as any, //antd @import .less errors when using dayjs in place of moment
+  // default: [null, null] as [Date | null, Date | null],
+  default: ["", ""] as [string, string],
 });
 
 const listDataState = atom({
@@ -15,7 +16,7 @@ const listDataState = atom({
 
 const tagsState = atom({
   key: "tagsState",
-  default: [] as string[],
+  default: [] as TagOption[],
 });
 
 const searchState = atom({
@@ -25,7 +26,7 @@ const searchState = atom({
 
 const sortState = atom({
   key: "sortState",
-  default: "desc" as "asc" | "desc",
+  default: { value: "desc", label: "Most to least recent" } as SortOption,
 });
 
 const renderNumState = atom({
