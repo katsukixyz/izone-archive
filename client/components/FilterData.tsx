@@ -233,6 +233,7 @@ export const tagCategories = [
   "Idol Room",
   "Greetings",
   "Dance Practice",
+  "Deleted",
   "Audio Only",
   "Misc",
 ];
@@ -250,6 +251,7 @@ const tagOptions: TagOption[] = [
   { label: "Idol Room", value: "Idol Room" },
   { label: "Greetings", value: "Greetings" },
   { label: "Dance Practice", value: "Dance Practice" },
+  { label: "Deleted", value: "Deleted" },
   { label: "Audio Only", value: "Audio Only" },
   { label: "Misc", value: "Misc" },
 ];
