@@ -46,29 +46,28 @@ const Video: React.FC<VideoMeta> = ({
       </Head>
 
       <Center>
-        <Stack direction="column">
-          <ChakraLink href="/" as={Link} maxW="1000px">
-            <Box maxW="1000px">
-              <ArrowBackIcon
-                w={6}
-                h={6}
-                _hover={{
-                  color: "brand.500",
-                  cursor: "pointer",
-                  transition: "0.3s",
-                }}
-              />
-            </Box>
+        <Stack direction="column" w="100%" maxW="1000px">
+          <ChakraLink href="/" as={Link}>
+            <ArrowBackIcon
+              w={6}
+              h={6}
+              _hover={{
+                color: "brand.500",
+                cursor: "pointer",
+                transition: "0.3s",
+              }}
+            />
           </ChakraLink>
           <Box mt="1" mb="1">
             <Box
               p="6"
-              maxW="1000px"
+              w="100%"
               borderRadius="6"
               boxShadow="0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
             >
-              <Box>
+              <Box position="relative" pt="56.25%">
                 <ReactPlayer
+                  style={{ position: "absolute", top: 0, left: 0 }}
                   playing={autoplay}
                   url={video}
                   width="100%"

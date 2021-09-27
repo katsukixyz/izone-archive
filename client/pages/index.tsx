@@ -116,7 +116,6 @@ const VideoList: React.FC<VideoListProps> = () => {
             >
               <Stack direction="column" spacing="2" ml="1.5" mr="1.5" mb="4">
                 {filteredList.map((item) => (
-                  // <Box key={item.id} maxW="860">
                   <Box key={item.id} w="100%">
                     <VideoCard item={item} />
                   </Box>
