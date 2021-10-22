@@ -138,6 +138,7 @@ const FilterData: React.FC<FilterDataProps> = ({
               />
             </Stack>
             <Select
+              isSearchable={false}
               value={sort}
               onChange={(sort) => setSort(sort!)}
               options={sortOptions}
@@ -163,6 +164,7 @@ const FilterData: React.FC<FilterDataProps> = ({
             />
             <Select
               isMulti
+              isSearchable={false}
               closeMenuOnSelect={false}
               placeholder="Filter by tags"
               value={tags}
