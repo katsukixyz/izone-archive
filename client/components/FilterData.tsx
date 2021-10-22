@@ -20,6 +20,7 @@ import {
   Stack,
   Box,
   Text,
+  Button,
 } from "@chakra-ui/react";
 
 import Select from "react-select";
@@ -98,6 +99,13 @@ const FilterData: React.FC<FilterDataProps> = ({
   const [tags, setTags] = useRecoilState(tagsState);
   const [search, setSearch] = useRecoilState(searchState);
 
+  const resetFilters = () => {
+    setDateRange(["", ""]);
+    setSort({ value: "desc", label: "Most to least recent" });
+    setTags([]);
+    setSearch("");
+  };
+
   return (
     <Drawer
       isOpen={isOpen}
@@ -175,7 +183,24 @@ const FilterData: React.FC<FilterDataProps> = ({
               styles={customStyles}
             />
           </Stack>
-          <Box mt="4">
+
+          {!(
+            !startDate &&
+            !endDate &&
+            tags.length === 0 &&
+            !search &&
+            sort.value === "desc"
+          ) ? (
+            <Button
+              colorScheme="brand"
+              variant="link"
+              mt="2"
+              onClick={resetFilters}
+            >
+              Reset
+            </Button>
+          ) : null}
+          <Box mt="2">
             <Text color="gray.400" fontSize="sm">
               Enter start and end dates in the format MM/DD/YYYY
             </Text>
