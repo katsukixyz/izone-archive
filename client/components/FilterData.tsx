@@ -166,6 +166,7 @@ const FilterData: React.FC<FilterDataProps> = ({
               isMulti
               isSearchable={false}
               closeMenuOnSelect={false}
+              blurInputOnSelect={false}
               placeholder="Filter by tags"
               value={tags}
               onChange={(value) => setTags(value as TagOption[])}
