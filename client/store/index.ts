@@ -1,6 +1,6 @@
 import { atom, selector } from "recoil";
 import { combineFilters } from "../components/FilterData";
-import meta from "../src/meta.json";
+import meta from "../public/meta.json";
 import { SortOption, TagOption, VideoMeta } from "../types/types";
 
 const dateRangeState = atom({

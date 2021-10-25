@@ -7,7 +7,7 @@ import isBetween from "dayjs/plugin/isBetween";
 import utc from "dayjs/plugin/utc";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { filteredListState, renderNumState } from "../store/index";
-import meta from "../src/meta.json";
+import meta from "../public/meta.json";
 import { VideoMeta } from "../types/types";
 import VideoCard from "../components/VideoCard";
 import {
@@ -26,12 +26,7 @@ import { ChevronUpIcon } from "@chakra-ui/icons";
 dayjs.extend(isBetween);
 dayjs.extend(utc);
 
-interface VideoListProps {
-  data: VideoMeta[];
-  initListData: VideoMeta[];
-}
-
-const VideoList: React.FC<VideoListProps> = () => {
+const VideoList: React.FC = () => {
   const { filteredList } = useRecoilValue(filteredListState);
   const [renderNum, setRenderNum] = useRecoilState(renderNumState);
 
