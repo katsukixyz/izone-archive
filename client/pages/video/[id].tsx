@@ -4,7 +4,7 @@ import Head from "next/head";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import ReactPlayer from "react-player/lazy";
-import meta from "../../src/meta.json";
+import meta from "../../public/meta.json";
 import { VideoMeta } from "../../types/types";
 import AutoplayContext from "../../contexts/AutoplayContext";
 import {
