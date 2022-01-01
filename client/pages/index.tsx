@@ -24,15 +24,12 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import { ChevronUpIcon } from "@chakra-ui/icons";
-import LocaleContext from "../contexts/LocaleContext";
-import { Translation } from "react-i18next";
 
 dayjs.extend(isBetween);
 dayjs.extend(utc);
 
 const VideoList: React.FC = () => {
   const { t } = useTranslation("main");
-  // const { locale } = useContext(LocaleContext);
   const { filteredList } = useRecoilValue(filteredListState);
 
   const [renderNum, setRenderNum] = useRecoilState(renderNumState);

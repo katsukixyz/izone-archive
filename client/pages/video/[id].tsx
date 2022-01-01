@@ -135,11 +135,20 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
 }
 
 export async function getStaticPaths() {
-  const paths = meta.map((video) => ({
-    params: {
-      id: video.id,
+  const paths = meta.flatMap((video) => [
+    {
+      params: {
+        id: video.id,
+      },
+      locale: "en",
     },
-  }));
+    {
+      params: {
+        id: video.id,
+      },
+      locale: "ko",
+    },
+  ]);
   return { paths, fallback: false };
 }
 
