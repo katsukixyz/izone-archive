@@ -84,7 +84,7 @@ const CustomNav: React.FC = () => {
 const DesktopNav = () => {
   return (
     <Stack direction={"row"} spacing={6} align="center">
-      <ChakraLink as={Link} href="/contact">
+      <ChakraLink as={Link} href="/information">
         <InfoIcon
           color="gray.500"
           w={5}
