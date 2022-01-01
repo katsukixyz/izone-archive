@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
+import LocaleContext from "../contexts/LocaleContext";
 import Link from "next/link";
+import { NextRouter, useRouter } from "next/router";
 import {
   Box,
   Flex,
@@ -23,7 +25,9 @@ import {
 import { BiDonateHeart } from "react-icons/bi";
 
 const CustomNav: React.FC = () => {
+  const router = useRouter();
   const { isOpen, onToggle } = useDisclosure();
+  const { locale, changeLocale } = useContext(LocaleContext);
 
   return (
     <Box>
@@ -70,7 +74,11 @@ const CustomNav: React.FC = () => {
           ml={10}
           justify="flex-end"
         >
-          <DesktopNav />
+          <DesktopNav
+            locale={locale}
+            changeLocale={changeLocale}
+            router={router}
+          />
         </Flex>
       </Flex>
 
@@ -81,9 +89,33 @@ const CustomNav: React.FC = () => {
   );
 };
 
-const DesktopNav = () => {
+const DesktopNav = ({
+  locale,
+  changeLocale,
+  router,
+}: {
+  locale: string;
+  changeLocale: () => void;
+  router: NextRouter;
+}) => {
   return (
     <Stack direction={"row"} spacing={6} align="center">
+      <ChakraLink
+        as={Link}
+        href="/"
+        locale={router.locale === "en" ? "ko" : "en"}
+      >
+        <Text
+          color="gray.500"
+          fontWeight="semibold"
+          onClick={changeLocale}
+          _hover={{
+            cursor: "pointer",
+          }}
+        >
+          {locale}
+        </Text>
+      </ChakraLink>
       <ChakraLink as={Link} href="/information">
         <InfoIcon
           color="gray.500"
@@ -135,7 +167,7 @@ const DesktopNav = () => {
 const MobileMenu = () => {
   return (
     <Stack bg="white" p={4} display={{ md: "none" }}>
-      <ChakraLink as={Link} href="/contact">
+      <ChakraLink as={Link} href="/information">
         <Text
           fontSize="md"
           fontWeight={600}

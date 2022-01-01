@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import AutoplayContext from "../contexts/AutoplayContext";
 import {

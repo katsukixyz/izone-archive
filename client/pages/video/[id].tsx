@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import Head from "next/head";
 import dayjs from "dayjs";
