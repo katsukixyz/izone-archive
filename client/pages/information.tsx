@@ -50,8 +50,9 @@ const Information: React.FC = () => {
                   borderColor="gray.300"
                   borderLeftWidth={2}
                 >
-                  No, this site will remain operational regardless of VLIVE
-                  status. The site runs independently of VLIVE's servers.
+                  {
+                    "No, this site will remain operational regardless of VLIVE status. The site runs independently of VLIVE's servers."
+                  }
                 </AccordionPanel>
               </AccordionItem>
 
