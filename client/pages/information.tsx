@@ -71,8 +71,7 @@ const Information: React.FC = () => {
                   borderColor="gray.300"
                   borderLeftWidth={2}
                 >
-                  Yes, use the filter by tags option and select the "Deleted"
-                  tag.
+                  {`Yes, use the filter by tags option and select the "Deleted" tag.`}
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
