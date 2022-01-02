@@ -94,7 +94,6 @@ const CustomNav: React.FC = () => {
 const DesktopNav = ({
   locale,
   changeLocale,
-  router,
 }: {
   locale: string;
   changeLocale: () => void;
@@ -102,22 +101,18 @@ const DesktopNav = ({
 }) => {
   return (
     <Stack direction={"row"} spacing={6} align="center">
-      <ChakraLink
-        as={Link}
-        href={router.route}
-        locale={router.locale === "en" ? "ko" : "en"}
+      <Text
+        color="gray.500"
+        fontWeight="semibold"
+        onClick={changeLocale}
+        _hover={{
+          cursor: "pointer",
+          color: "gray.400",
+          transition: "0.3s",
+        }}
       >
-        <Text
-          color="gray.500"
-          fontWeight="semibold"
-          onClick={changeLocale}
-          _hover={{
-            cursor: "pointer",
-          }}
-        >
-          {locale}
-        </Text>
-      </ChakraLink>
+        {locale}
+      </Text>
       <ChakraLink as={Link} href="/information">
         <InfoIcon
           color="gray.500"

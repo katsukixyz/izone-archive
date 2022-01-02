@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Router, { useRouter } from "next/router";
+import Router, { NextRouter, useRouter } from "next/router";
 import nprogress from "nprogress";
 import { RecoilRoot } from "recoil";
 import { appWithTranslation, useTranslation } from "next-i18next";
@@ -32,9 +32,9 @@ interface AppProps {
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   const { i18n } = useTranslation();
+  const router = useRouter();
   const [autoplay, setAutoplay] = useState(true);
   const [locale, setLocale] = useState(i18n.language);
-  const router = useRouter();
 
   const toggleAutoplay = () => {
     localStorage.setItem("autoplay", (!autoplay).toString());
@@ -45,6 +45,9 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     const newLocale = locale === "en" ? "ko" : "en";
     setLocale(newLocale);
     i18n.changeLanguage(newLocale);
+    router.push(router.pathname, router.asPath, {
+      locale: newLocale,
+    });
   };
 
   useEffect(() => {
