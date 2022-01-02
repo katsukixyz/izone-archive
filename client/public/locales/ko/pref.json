@@ -1,0 +1,10 @@
+{
+  "heading": "설정",
+  "language": {
+    "label": "언어"
+  },
+  "autoplay": {
+    "label": "자동 재생",
+    "description": "페이지 로드 후 자동으로 영상을 재생해요"
+  }
+}

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { VideoMeta } from "../types/types";
 import Link from "next/link";
 import { Box, Link as ChakraLink, Stack, Tag, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import dayjs from "dayjs";
+import { useTranslation } from "next-i18next";
 
 interface VideoCardProps {
   item: VideoMeta;
@@ -20,7 +21,9 @@ const Duration = ({ duration }: { duration: number }) => {
 };
 
 const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
+  const { t } = useTranslation("filter");
   const { id, thumbnail, title, date, duration, tags } = item;
+
   return (
     <Box
       display={{ base: "block", md: "flex" }}
@@ -71,7 +74,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
         <Stack direction="row" mt="2">
           {tags.map((tag) => (
             <Tag key={tag} bg="brand.200">
-              {tag}
+              {t("tags." + tag)}
             </Tag>
           ))}
         </Stack>

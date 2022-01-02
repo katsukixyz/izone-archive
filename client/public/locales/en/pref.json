@@ -1,0 +1,10 @@
+{
+  "heading": "Preferences",
+  "language": {
+    "label": "Language"
+  },
+  "autoplay": {
+    "label": "Autoplay",
+    "description": "Play videos automatically on page load"
+  }
+}

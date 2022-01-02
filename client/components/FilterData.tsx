@@ -25,12 +25,13 @@ import {
 
 import Select from "react-select";
 import customParseFormat from "dayjs/plugin/customParseFormat";
+import { useTranslation } from "next-i18next";
 dayjs.extend(customParseFormat);
 
 const combineFilters = (
   data: VideoMeta[],
   dateRange: [string, string],
-  sort: SortOption,
+  sort: "desc" | "asc",
   search: string,
   tags: TagOption[]
 ) => {
@@ -68,7 +69,7 @@ const combineFilters = (
   }
 
   // sort
-  if (sort.value === "asc") {
+  if (sort === "asc") {
     filteredListData = filteredListData.sort(
       (a, b) => dayjs(a.date).unix() - dayjs(b.date).unix()
     );
@@ -92,6 +93,7 @@ const FilterData: React.FC<FilterDataProps> = ({
   isOpen,
   onClose,
 }) => {
+  const { t } = useTranslation("filter");
   const { totalResults } = useRecoilValue(filteredListState);
   const [dateRange, setDateRange] = useRecoilState(dateRangeState);
   const [startDate, endDate] = dateRange;
@@ -101,10 +103,40 @@ const FilterData: React.FC<FilterDataProps> = ({
 
   const resetFilters = () => {
     setDateRange(["", ""]);
-    setSort({ value: "desc", label: "Most to least recent" });
+    // setSort({ value: "desc", label: "Most to least recent" });
+    setSort("desc");
     setTags([]);
     setSearch("");
   };
+
+  const sortOptions: SortOption[] = [
+    {
+      value: "desc",
+      label: t("desc"),
+    },
+    {
+      value: "asc",
+      label: t("asc"),
+    },
+  ];
+
+  const tagOptions: TagOption[] = [
+    { label: t("tags.live"), value: "live" },
+    { label: t("tags.deleted"), value: "deleted" },
+    { label: t("tags.vpick"), value: "vpick" },
+    { label: t("tags.enozi"), value: "enozi" },
+    { label: t("tags.promotion"), value: "promotion" },
+    { label: t("tags.mv"), value: "mv" },
+    { label: t("tags.cheerGuide"), value: "cheerGuide" },
+    { label: t("tags.makingFilm"), value: "makingFilm" },
+    { label: t("tags.liev"), value: "liev" },
+    { label: t("tags.starRoad"), value: "starRoad" },
+    { label: t("tags.idolRoom"), value: "idolRoom" },
+    { label: t("tags.greetings"), value: "greetings" },
+    { label: t("tags.dancePractice"), value: "dancePractice" },
+    { label: t("tags.audioOnly"), value: "audioOnly" },
+    { label: t("tags.misc"), value: "misc" },
+  ];
 
   return (
     <Drawer
@@ -116,14 +148,14 @@ const FilterData: React.FC<FilterDataProps> = ({
       <DrawerOverlay />
       <DrawerContent>
         <DrawerCloseButton />
-        <DrawerHeader>{`Videos found: ${totalResults}`}</DrawerHeader>
+        <DrawerHeader>{`${t("videosFound")}${totalResults}`}</DrawerHeader>
         <DrawerBody>
           <Stack direction="column">
             <Stack direction="row">
               <Input
                 value={startDate}
                 focusBorderColor="brand.500"
-                placeholder="Start date"
+                placeholder={t("startDate")}
                 onChange={(event) =>
                   setDateRange([event.target.value, endDate])
                 }
@@ -131,7 +163,7 @@ const FilterData: React.FC<FilterDataProps> = ({
               <Input
                 value={endDate}
                 focusBorderColor="brand.500"
-                placeholder="End date"
+                placeholder={t("endDate")}
                 onChange={(event) =>
                   setDateRange([startDate, event.target.value])
                 }
@@ -139,8 +171,11 @@ const FilterData: React.FC<FilterDataProps> = ({
             </Stack>
             <Select
               isSearchable={false}
-              value={sort}
-              onChange={(sort) => setSort(sort!)}
+              value={{
+                value: sort,
+                label: t(sort),
+              }}
+              onChange={(sort) => setSort(sort!.value)}
               options={sortOptions}
               theme={(theme) => ({
                 ...theme,
@@ -159,7 +194,7 @@ const FilterData: React.FC<FilterDataProps> = ({
             <Input
               value={search}
               focusBorderColor="brand.500"
-              placeholder="Search titles"
+              placeholder={t("search")}
               onChange={(event) => setSearch(event.target.value)}
             />
             <Select
@@ -167,7 +202,7 @@ const FilterData: React.FC<FilterDataProps> = ({
               isSearchable={false}
               closeMenuOnSelect={false}
               blurInputOnSelect={false}
-              placeholder="Filter by tags"
+              placeholder={t("tags.placeholder")}
               value={tags}
               onChange={(value) => setTags(value as TagOption[])}
               options={tagOptions}
@@ -192,7 +227,7 @@ const FilterData: React.FC<FilterDataProps> = ({
             !endDate &&
             tags.length === 0 &&
             !search &&
-            sort.value === "desc"
+            sort === "desc"
           ) ? (
             <Button
               colorScheme="brand"
@@ -200,16 +235,15 @@ const FilterData: React.FC<FilterDataProps> = ({
               mt="2"
               onClick={resetFilters}
             >
-              Reset
+              {t("reset")}
             </Button>
           ) : null}
           <Box mt="2">
             <Text color="gray.400" fontSize="sm">
-              Enter start and end dates in the format MM/DD/YYYY
+              {t("dateDesc")}
             </Text>
             <Text color="gray.400" fontSize="sm" mt="1">
-              Selecting multiple tags displays results with any of the selected
-              tags
+              {t("tagDesc")}
             </Text>
           </Box>
         </DrawerBody>
@@ -237,19 +271,9 @@ const customStyles = {
   }),
 };
 
-const sortOptions: SortOption[] = [
-  {
-    value: "desc",
-    label: "Most to least recent",
-  },
-  {
-    value: "asc",
-    label: "Least to most recent",
-  },
-];
-
 export const tagCategories = [
   "Live",
+  "Deleted",
   "VPICK",
   "ENOZI",
   "Promotion",
@@ -261,25 +285,6 @@ export const tagCategories = [
   "Idol Room",
   "Greetings",
   "Dance Practice",
-  "Deleted",
   "Audio Only",
   "Misc",
-];
-
-const tagOptions: TagOption[] = [
-  { label: "Live", value: "Live" },
-  { label: "VPICK", value: "VPICK" },
-  { label: "ENOZI", value: "ENOZI" },
-  { label: "Promotion", value: "Promotion" },
-  { label: "MV", value: "MV" },
-  { label: "Cheer Guide", value: "Cheer Guide" },
-  { label: "Making Film", value: "Making Film" },
-  { label: "LieV", value: "LieV" },
-  { label: "Star Road", value: "Star Road" },
-  { label: "Idol Room", value: "Idol Room" },
-  { label: "Greetings", value: "Greetings" },
-  { label: "Dance Practice", value: "Dance Practice" },
-  { label: "Deleted", value: "Deleted" },
-  { label: "Audio Only", value: "Audio Only" },
-  { label: "Misc", value: "Misc" },
 ];

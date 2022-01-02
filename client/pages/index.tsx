@@ -1,4 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
+import { useTranslation, withTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRecoilState, useRecoilValue } from "recoil";
 import Head from "next/head";
 import FilterData from "../components/FilterData";
@@ -27,7 +29,9 @@ dayjs.extend(isBetween);
 dayjs.extend(utc);
 
 const VideoList: React.FC = () => {
+  const { t } = useTranslation("main");
   const { filteredList } = useRecoilValue(filteredListState);
+
   const [renderNum, setRenderNum] = useRecoilState(renderNumState);
 
   const [buttonVis, setButtonVis] = useState(false);
@@ -55,6 +59,7 @@ const VideoList: React.FC = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   return (
@@ -89,7 +94,7 @@ const VideoList: React.FC = () => {
             justify="space-between"
             align="center"
           >
-            <Heading>VLIVE Archive</Heading>
+            <Heading>{t("heading")}</Heading>
             <Spacer />
             <Button
               ref={filterButtonRef}
@@ -97,7 +102,7 @@ const VideoList: React.FC = () => {
               colorScheme="brand"
               _hover={{ bgColor: "brand.200" }}
             >
-              Filter
+              {t("filterBtn")}
             </Button>
           </Flex>
           <Box w="100%" maxW="860px">
@@ -137,5 +142,13 @@ const VideoList: React.FC = () => {
     </>
   );
 };
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["main", "filter"])),
+    },
+  };
+}
 
 export default VideoList;

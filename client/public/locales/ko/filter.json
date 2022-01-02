@@ -1,0 +1,29 @@
+{
+  "videosFound": "찾은 영상: ",
+  "startDate": "시작 날짜",
+  "endDate": "종료 날짜",
+  "desc": "정확도순",
+  "asc": "정확도역순",
+  "search": "제목",
+  "tags": {
+    "placeholder": "태그",
+    "live": "라이브",
+    "deleted": "삭제됨",
+    "vpick": "VPICK",
+    "enozi": "ENOZI",
+    "promotion": "프로모션",
+    "mv": "MV",
+    "cheerGuide": "응원법",
+    "makingFilm": "메이킹필름",
+    "liev": "LieV",
+    "starRoad": "스타로드",
+    "idolRoom": "아이돌룸",
+    "greetings": "인사 메시지",
+    "dancePractice": "Dance Practice",
+    "audioOnly": "Voice Only",
+    "misc": "기타"
+  },
+  "reset": "초기화",
+  "dateDesc": "MM/DD/YYYY 형식으로 날짜를 입력해주세요",
+  "tagDesc": "여러 태그를 선택하면 모든 태그에 대한 결과가 표시돼요"
+}
