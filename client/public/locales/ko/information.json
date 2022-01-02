@@ -1,22 +1,22 @@
 {
-  "heading": "Information",
+  "heading": "정보",
   "faq": {
     "heading": "FAQ",
     "1": {
-      "q": "Will this site go offline if VLIVE services are terminated?",
-      "a": "No, this site will remain operational regardless of VLIVE status. The site runs independently of VLIVE's servers."
+      "q": "VLIVE 서비스 종료시 이 사이트 이용이 중지되나요?",
+      "a": "아니요, 이 사이트는 VLIVE 서비스와 관계없이 계속 운영돼요. 이 사이트는 VLIVE 서버와 독립적이에요."
     },
     "2": {
-      "q": "Does the archive include deleted VLIVEs?",
-      "a": "Yes, use the filter by tags option and select the \"Deleted\" tag."
+      "q": "삭제된 VLIVE 영상도 제공되나요?",
+      "a": "네, \"삭제됨\" 태그를 통해 찾을 수 있어요."
     }
   },
   "issues": {
-    "heading": "Report issues/feature suggestions",
-    "description": "Create a new issue on the GitHub repository with the relevant details and reproduction methods and it will be dealt with promptly."
+    "heading": "오류 신고 및 개선 제안",
+    "description": "Github 레포스트리에 관련 Issue를 발행하시면 신속히 처리해드려요."
   },
   "misc": {
-    "heading": "Miscellaneous",
-    "description": "For any miscellaneous questions, either leave an issue on GitHub or email me at katsukidotxyz@gmail.com."
+    "heading": "기타",
+    "description": "기타 질문 사항은 Github Issue나 katsukidotxyz@gmail.com로 연락해주세요."
   }
 }
