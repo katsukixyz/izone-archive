@@ -121,21 +121,21 @@ const FilterData: React.FC<FilterDataProps> = ({
   ];
 
   const tagOptions: TagOption[] = [
-    { label: t("tags.live"), value: "Live" },
-    { label: t("tags.deleted"), value: "Deleted" },
-    { label: t("tags.vpick"), value: "VPICK" },
-    { label: t("tags.enozi"), value: "ENOZI" },
-    { label: t("tags.promotion"), value: "Promotion" },
-    { label: t("tags.mv"), value: "MV" },
-    { label: t("tags.cheerGuide"), value: "Cheer Guide" },
-    { label: t("tags.makingFilm"), value: "Making Film" },
-    { label: t("tags.liev"), value: "LieV" },
-    { label: t("tags.starRoad"), value: "Star Road" },
-    { label: t("tags.idolRoom"), value: "Idol Room" },
-    { label: t("tags.greetings"), value: "Greetings" },
-    { label: t("tags.dancePractice"), value: "Dance Practice" },
-    { label: t("tags.audioOnly"), value: "Audio Only" },
-    { label: t("tags.misc"), value: "Misc" },
+    { label: t("tags.live"), value: "live" },
+    { label: t("tags.deleted"), value: "deleted" },
+    { label: t("tags.vpick"), value: "vpick" },
+    { label: t("tags.enozi"), value: "enozi" },
+    { label: t("tags.promotion"), value: "promotion" },
+    { label: t("tags.mv"), value: "mv" },
+    { label: t("tags.cheerGuide"), value: "cheerGuide" },
+    { label: t("tags.makingFilm"), value: "makingFilm" },
+    { label: t("tags.liev"), value: "liev" },
+    { label: t("tags.starRoad"), value: "starRoad" },
+    { label: t("tags.idolRoom"), value: "idolRoom" },
+    { label: t("tags.greetings"), value: "greetings" },
+    { label: t("tags.dancePractice"), value: "dancePractice" },
+    { label: t("tags.audioOnly"), value: "audioOnly" },
+    { label: t("tags.misc"), value: "misc" },
   ];
 
   return (
