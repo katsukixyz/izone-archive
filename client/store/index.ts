@@ -1,5 +1,6 @@
+import { useTranslation } from "next-i18next";
 import { atom, selector } from "recoil";
-import { combineFilters } from "../components/FilterData";
+import { combineFilters, tagCategories } from "../components/FilterData";
 import meta from "../public/meta.json";
 import { SortOption, TagOption, VideoMeta } from "../types/types";
 
@@ -25,7 +26,8 @@ const searchState = atom({
 
 const sortState = atom({
   key: "sortState",
-  default: { value: "desc", label: "Most to least recent" } as SortOption,
+  // default: { value: "desc", label: "Most to least recent" } as SortOption,
+  default: "desc" as "desc" | "asc",
 });
 
 const renderNumState = atom({

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Router from "next/router";
+import Router, { useRouter } from "next/router";
 import nprogress from "nprogress";
 import { RecoilRoot } from "recoil";
 import { appWithTranslation, useTranslation } from "next-i18next";
@@ -11,7 +11,7 @@ import Head from "next/head";
 import AutoplayContext from "../contexts/AutoplayContext";
 import CustomNav from "../components/CustomNav";
 import LocaleContext from "../contexts/LocaleContext";
-import { checkCookies, getCookie, setCookies } from "cookies-next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const theme = extendTheme({
   colors: {
@@ -31,10 +31,10 @@ interface AppProps {
 }
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
-  const [autoplay, setAutoplay] = useState(true);
-  const [locale, setLocale] = useState("en");
-
   const { i18n } = useTranslation();
+  const [autoplay, setAutoplay] = useState(true);
+  const [locale, setLocale] = useState(i18n.language);
+  const router = useRouter();
 
   const toggleAutoplay = () => {
     localStorage.setItem("autoplay", (!autoplay).toString());
@@ -44,7 +44,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   const changeLocale = () => {
     const newLocale = locale === "en" ? "ko" : "en";
     setLocale(newLocale);
-    setCookies("NEXT_LOCALE", newLocale);
     i18n.changeLanguage(newLocale);
   };
 
@@ -52,11 +51,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     localStorage.getItem("autoplay") === null
       ? localStorage.setItem("autoplay", "true")
       : setAutoplay(localStorage.getItem("autoplay") === "true");
-    if (!checkCookies("NEXT_LOCALE")) {
-      setCookies("NEXT_LOCALE", "en");
-    } else {
-      setLocale(getCookie("NEXT_LOCALE") as string);
-    }
   }, []);
 
   return (
@@ -79,5 +73,13 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     </AutoplayContext.Provider>
   );
 };
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["main"])),
+    },
+  };
+}
 
 export default appWithTranslation(App);

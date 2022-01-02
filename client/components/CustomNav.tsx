@@ -23,11 +23,13 @@ import {
   InfoIcon,
 } from "@chakra-ui/icons";
 import { BiDonateHeart } from "react-icons/bi";
+import { useTranslation, TFunction, I18n } from "next-i18next";
 
 const CustomNav: React.FC = () => {
   const router = useRouter();
+  const { t, i18n } = useTranslation("main");
   const { isOpen, onToggle } = useDisclosure();
-  const { locale, changeLocale } = useContext(LocaleContext);
+  const { changeLocale } = useContext(LocaleContext);
 
   return (
     <Box>
@@ -75,7 +77,7 @@ const CustomNav: React.FC = () => {
           justify="flex-end"
         >
           <DesktopNav
-            locale={locale}
+            locale={i18n.language}
             changeLocale={changeLocale}
             router={router}
           />
@@ -83,7 +85,7 @@ const CustomNav: React.FC = () => {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
-        <MobileMenu />
+        <MobileMenu t={t} />
       </Collapse>
     </Box>
   );
@@ -102,7 +104,7 @@ const DesktopNav = ({
     <Stack direction={"row"} spacing={6} align="center">
       <ChakraLink
         as={Link}
-        href="/"
+        href={router.route}
         locale={router.locale === "en" ? "ko" : "en"}
       >
         <Text
@@ -164,7 +166,7 @@ const DesktopNav = ({
   );
 };
 
-const MobileMenu = () => {
+const MobileMenu = ({ t }: { t: TFunction }) => {
   return (
     <Stack bg="white" p={4} display={{ md: "none" }}>
       <ChakraLink as={Link} href="/information">
@@ -174,7 +176,7 @@ const MobileMenu = () => {
           color="gray.600"
           _hover={{ cursor: "pointer" }}
         >
-          Contact
+          {t("information")}
         </Text>
       </ChakraLink>
       <a
@@ -183,7 +185,7 @@ const MobileMenu = () => {
         rel="noopener noreferrer"
       >
         <Text fontSize="md" fontWeight={600} color="gray.600" mt="2">
-          Donate
+          {t("donate")}
         </Text>
       </a>
       <ChakraLink as={Link} href="/pref">
@@ -193,7 +195,7 @@ const MobileMenu = () => {
           color="gray.600"
           _hover={{ cursor: "pointer" }}
         >
-          Preferences
+          {t("preferences")}
         </Text>
       </ChakraLink>
     </Stack>

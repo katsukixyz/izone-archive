@@ -17,17 +17,14 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
+import { useTranslation } from "next-i18next";
 
 dayjs.extend(utc);
 
-const Video: React.FC<VideoMeta> = ({
-  date,
-  title,
-  video,
-  thumbnail,
-  subtitles,
-}) => {
+const Video: React.FC<{ vidObj: VideoMeta }> = ({ vidObj }) => {
+  const { t } = useTranslation("video");
   const { autoplay } = useContext(AutoplayContext);
+  const { date, title, video, thumbnail, subtitles } = vidObj;
 
   return (
     <Box p="6">
@@ -109,7 +106,7 @@ const Video: React.FC<VideoMeta> = ({
                     bg="brand.200"
                   >
                     <Box padding="3">
-                      The following subtitles are available for this video:{" "}
+                      {t("subtitleMsg")}
                       <Stack direction="row" display="inline" spacing={1}>
                         {subtitles.map(({ code }) => (
                           <Tag size="sm" key={code}>
@@ -129,9 +126,20 @@ const Video: React.FC<VideoMeta> = ({
   );
 };
 
-export async function getStaticProps({ params }: { params: { id: string } }) {
+export async function getStaticProps({
+  params,
+  locale,
+}: {
+  params: { id: string };
+  locale: string;
+}) {
   const vidObj = meta.filter((vid) => vid.id === params.id)[0];
-  return { props: vidObj };
+  return {
+    props: {
+      vidObj,
+      ...(await serverSideTranslations(locale, ["main", "video"])),
+    },
+  };
 }
 
 export async function getStaticPaths() {

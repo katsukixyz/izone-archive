@@ -1,0 +1,29 @@
+{
+  "videosFound": "Videos found: ",
+  "startDate": "Start date",
+  "endDate": "End date",
+  "desc": "Most to least recent",
+  "asc": "Least to most recent",
+  "search": "Search titles",
+  "tags": {
+    "placeholder": "Filter by tags",
+    "live": "Live",
+    "deleted": "Deleted",
+    "vpick": "VPICK",
+    "enozi": "ENOZI",
+    "promotion": "Promotion",
+    "mv": "MV",
+    "cheerGuide": "Cheer Guide",
+    "makingFilm": "Making Film",
+    "liev": "LieV",
+    "starRoad": "Star Road",
+    "idolRoom": "Idol Room",
+    "greetings": "Greetings",
+    "dancePractice": "Dance Practice",
+    "audioOnly": "Audio Only",
+    "misc": "Misc"
+  },
+  "reset": "Reset",
+  "dateDesc": "Enter start and end dates in the format MM/DD/YYYY",
+  "tagDesc": "Selecting multiple tags displays results with any of the selected tags"
+}

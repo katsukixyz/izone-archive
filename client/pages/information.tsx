@@ -13,25 +13,29 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  Icon,
 } from "@chakra-ui/react";
+import { useTranslation } from "next-i18next";
+import { BsGithub } from "react-icons/bs";
 
 const Information: React.FC = () => {
+  const { t } = useTranslation("information");
   return (
     <Box p="4">
       <Head>
         <title>Information</title>
         <meta property="og:site_name" content="IZ*ONE VLIVE Archive" />
       </Head>
-      <Center>
+      <Center flexDir="column">
         <Box
           p="6"
           maxW="1000"
           borderRadius="6"
           boxShadow="0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
         >
-          <Heading mb="2">Information</Heading>
+          <Heading mb="2">{t("heading")}</Heading>
           <Text fontSize="2xl" fontWeight="semibold" mb="2">
-            FAQ
+            {t("faq.heading")}
           </Text>
           <Box mb="2">
             <Accordion allowToggle allowMultiple>
@@ -39,8 +43,7 @@ const Information: React.FC = () => {
                 <h2>
                   <AccordionButton>
                     <Box flex="1" textAlign="left">
-                      Will this site go offline if VLIVE services are
-                      terminated?
+                      {t("faq.1.q")}
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -51,9 +54,7 @@ const Information: React.FC = () => {
                   borderColor="gray.300"
                   borderLeftWidth={2}
                 >
-                  {
-                    "No, this site will remain operational regardless of VLIVE status. The site runs independently of VLIVE's servers."
-                  }
+                  {t("faq.1.a")}
                 </AccordionPanel>
               </AccordionItem>
 
@@ -61,7 +62,7 @@ const Information: React.FC = () => {
                 <h2>
                   <AccordionButton>
                     <Box flex="1" textAlign="left">
-                      Does the archive include deleted VLIVEs?
+                      {t("faq.2.q")}
                     </Box>
                     <AccordionIcon />
                   </AccordionButton>
@@ -72,18 +73,19 @@ const Information: React.FC = () => {
                   borderColor="gray.300"
                   borderLeftWidth={2}
                 >
-                  {`Yes, use the filter by tags option and select the "Deleted" tag.`}
+                  {t("faq.2.a")}
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
           </Box>
 
           <Text fontSize="2xl" fontWeight="semibold" mb="2">
-            Report issues/feature suggestions
+            {t("issues.heading")}
           </Text>
           <Box mb="2">
             <Text>
-              Create a new issue on the{" "}
+              {t("issues.description")}
+              {/* Create a new issue on the{" "}
               <Link
                 href="https://github.com/katsukixyz/izone-archive/issues"
                 isExternal
@@ -94,15 +96,16 @@ const Information: React.FC = () => {
                 </Tag>
               </Link>{" "}
               with the relevant details and reproduction methods and it will be
-              dealt with promptly.
+              dealt with promptly. */}
             </Text>
           </Box>
           <Text fontSize="2xl" fontWeight="semibold">
-            Miscellaneous
+            {t("misc.heading")}
           </Text>
           <Box>
             <Text>
-              For any miscellaneous questions, either leave an issue on{" "}
+              {t("misc.description")}
+              {/* For any miscellaneous questions, either leave an issue on{" "}
               <Link
                 href="https://github.com/katsukixyz/izone-archive/issues"
                 isExternal
@@ -122,13 +125,30 @@ const Information: React.FC = () => {
                   katsukidotxyz@gmail.com
                 </Tag>
               </Link>
-              .
+              . */}
             </Text>
           </Box>
+          <Center mt={5}>
+            <Link
+              href="https://github.com/katsukixyz/izone-archive"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon as={BsGithub} w={6} h={6} _hover={{ cursor: "pointer" }} />
+            </Link>
+          </Center>
         </Box>
       </Center>
     </Box>
   );
 };
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["main", "information"])),
+    },
+  };
+}
 
 export default Information;

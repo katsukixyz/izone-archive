@@ -102,7 +102,7 @@ const VideoList: React.FC = () => {
               colorScheme="brand"
               _hover={{ bgColor: "brand.200" }}
             >
-              Filter
+              {t("filterBtn")}
             </Button>
           </Flex>
           <Box w="100%" maxW="860px">
@@ -146,7 +146,7 @@ const VideoList: React.FC = () => {
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["main"])),
+      ...(await serverSideTranslations(locale, ["main", "filter"])),
     },
   };
 }

@@ -1,0 +1,22 @@
+{
+  "heading": "Information",
+  "faq": {
+    "heading": "FAQ",
+    "1": {
+      "q": "Will this site go offline if VLIVE services are terminated?",
+      "a": "No, this site will remain operational regardless of VLIVE status. The site runs independently of VLIVE's servers."
+    },
+    "2": {
+      "q": "Does the archive include deleted VLIVEs?",
+      "a": "Yes, use the filter by tags option and select the \"Deleted\" tag."
+    }
+  },
+  "issues": {
+    "heading": "Report issues/feature suggestions",
+    "description": "Create a new issue on the GitHub repository with the relevant details and reproduction methods and it will be dealt with promptly."
+  },
+  "misc": {
+    "heading": "Miscellaneous",
+    "description": "For any miscellaneous questions, either leave an issue on GitHub or email me at katsukidotxyz@gmail.com."
+  }
+}

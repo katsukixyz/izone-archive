@@ -18,7 +18,6 @@
     "@types/react-select": "^4.0.17",
     "@types/recoil": "^0.0.9",
     "bootstrap": "^5.0.2",
-    "cookies-next": "^2.0.3",
     "dayjs": "^1.10.6",
     "framer-motion": "^4",
     "next": "11.0.2-canary.28",

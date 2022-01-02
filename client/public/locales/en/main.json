@@ -1,3 +1,7 @@
 {
-    "heading": "VLIVE Archive"
+  "heading": "VLIVE Archive",
+  "filterBtn": "Filter",
+  "information": "Information",
+  "donate": "Donate",
+  "preferences": "Preferences"
 }
