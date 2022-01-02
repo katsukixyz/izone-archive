@@ -9,6 +9,7 @@ export type VideoMeta = {
   thumbnail: string;
   subtitles: SubtitleMeta[];
   tags: string[];
+  koTitle?: string;
 };
 
 export type SubtitleMeta = {

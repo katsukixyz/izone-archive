@@ -18,13 +18,15 @@ import {
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { useTranslation } from "next-i18next";
+import LocaleContext from "../../contexts/LocaleContext";
 
 dayjs.extend(utc);
 
 const Video: React.FC<{ vidObj: VideoMeta }> = ({ vidObj }) => {
   const { t } = useTranslation("video");
   const { autoplay } = useContext(AutoplayContext);
-  const { date, title, video, thumbnail, subtitles } = vidObj;
+  const { locale } = useContext(LocaleContext);
+  const { date, title, video, thumbnail, subtitles, koTitle } = vidObj;
 
   return (
     <Box p="6">
@@ -90,7 +92,7 @@ const Video: React.FC<{ vidObj: VideoMeta }> = ({ vidObj }) => {
 
               <Box mt="6">
                 <Text fontSize="2xl" fontWeight="medium">
-                  {title}
+                  {locale === "en" ? title : koTitle || title}
                 </Text>
                 <Text mb="2">
                   {dayjs.utc(date).local().format("MMMM D YYYY, h:mm:ss A")}

@@ -5,6 +5,7 @@ import { Box, Link as ChakraLink, Stack, Tag, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import dayjs from "dayjs";
 import { useTranslation } from "next-i18next";
+import LocaleContext from "../contexts/LocaleContext";
 
 interface VideoCardProps {
   item: VideoMeta;
@@ -22,7 +23,8 @@ const Duration = ({ duration }: { duration: number }) => {
 
 const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
   const { t } = useTranslation("filter");
-  const { id, thumbnail, title, date, duration, tags } = item;
+  const { locale } = useContext(LocaleContext);
+  const { id, thumbnail, title, date, duration, tags, koTitle } = item;
 
   return (
     <Box
@@ -65,7 +67,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
               transition: "0.3s",
             }}
           >
-            {title}
+            {locale === "en" ? title : koTitle || title}
           </Text>
         </ChakraLink>
         <Text mt="2" fontSize="md">
