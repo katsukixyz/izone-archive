@@ -33,7 +33,8 @@ const combineFilters = (
   dateRange: [string, string],
   sort: "desc" | "asc",
   search: string,
-  tags: TagOption[]
+  tags: TagOption[],
+  locale: string
 ) => {
   const parsedStartDate = dayjs(dateRange[0], "MM/DD/YYYY", true);
   const parsedEndDate = dayjs(dateRange[1], "MM/DD/YYYY", true);
@@ -63,9 +64,17 @@ const combineFilters = (
 
   // search
   if (search !== "") {
-    filteredListData = filteredListData.filter((item) =>
-      item.title.toLowerCase().includes(search)
-    );
+    if (locale === "en") {
+      filteredListData = filteredListData.filter((item) =>
+        item.title.toLowerCase().includes(search)
+      );
+    } else {
+      filteredListData = filteredListData.filter((item) =>
+        item.koTitle
+          ? item.koTitle.toLowerCase().includes(search)
+          : item.title.toLowerCase().includes(search)
+      );
+    }
   }
 
   // sort

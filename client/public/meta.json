@@ -2545,7 +2545,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/218558/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.74"
   },
   {
     "id": "218474",
@@ -2576,7 +2577,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/218474/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \ucc98\uc74c\ubd80\ud130 \ub9c8\uc9c0\ub9c9\uae4c\uc9c0 \uc544\uc774\uc988\uc6d0\uc774\ub2c8\uae4c \ub299\uc798\ubd80\u2763\ufe0f (ChaeYeon imagining about her future)"
   },
   {
     "id": "218389",
@@ -2607,7 +2609,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/218389/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc6b0\ub9ac \uac10\uc790\ub4e4 \uc624\ub298\ub3c4 \uadc0\uc5ec\uc6cc\uc918\uc11c \uac10\uc790\uac10\uc790\ud574\ud83e\udd54\ud83d\udc93 (Nako&Yuri talking about their first encounter)"
   },
   {
     "id": "217756",
@@ -2617,7 +2620,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/217756/217756.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/217756/thumb.jpg",
     "subtitles": [],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub625\ub545\ub775\ub625 \ucc44\uc5f0\uc774\uc608\uc694\ud83c\udf31"
   },
   {
     "id": "217590",
@@ -2640,7 +2644,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/217590/ko-fan.vtt"
       }
     ],
-    "tags": ["live", "audioOnly"]
+    "tags": ["live", "audioOnly"],
+    "koTitle": "\ub15c\ube44"
   },
   {
     "id": "217414",
@@ -2675,7 +2680,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/217414/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.73"
   },
   {
     "id": "216903",
@@ -2734,7 +2740,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/216580/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc18d\uace0 \uc18d\uc774\ub294 \uc544\uc774\uc988\uc6d0\uc758 \ub77c\uc774\uc5b4\uac8c\uc784\uc774\uc9c0\ub871\u3030\ufe0f\ud83d\ude08\ud83d\udc7b (IZ*ONE's Liar Game)"
   },
   {
     "id": "216398",
@@ -2768,7 +2775,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/216310/216310.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/216310/thumb.jpg",
     "subtitles": [],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uba54\ub9ac \ucd94\uc11d\ud83c\udf3c"
   },
   {
     "id": "215807",
@@ -2791,7 +2799,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/215807/ko-fan.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub315\ub315\ub77c\uc774\ube0c 8"
   },
   {
     "id": "215663",
@@ -2853,7 +2862,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/215655/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.72"
   },
   {
     "id": "215160",
@@ -2880,7 +2890,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/215160/ko-fan.vtt"
       }
     ],
-    "tags": ["live", "audioOnly"]
+    "tags": ["live", "audioOnly"],
+    "koTitle": "\ud83c\udf82\uc751\ube44\ud83c\udf70"
   },
   {
     "id": "214910",
@@ -2911,7 +2922,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/214910/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.71"
   },
   {
     "id": "214900",
@@ -2977,7 +2989,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/214575/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \ucc9c\uc7ac \ud150\uc0ac\uc774 \uc9c0\ub2c8\uc5b4\uc2a4 \uc544\uae30\uace0\uc591\uc774 \uafb8\ub77c\ub97c \uafb8\ub791\ud574\ud83c\udf38\ud83d\udc97 (SAKURA talking about \u2018Yummy Summer\u2019)"
   },
   {
     "id": "214196",
@@ -3016,7 +3029,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/214196/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ubb50\ud558\uc9d5\ud83c\udf5e"
   },
   {
     "id": "214001",
@@ -3055,7 +3069,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/214001/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.70"
   },
   {
     "id": "213977",
@@ -3094,7 +3109,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/213977/ko-fan.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uafb8\ub77c\uc758 \uc57c\uc2dd \uba39\ubc29\ud83c\udf38\ud83c\udf19"
   },
   {
     "id": "212988",
@@ -3129,7 +3145,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/212988/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ube68\uac04\uba38\ub9ac \uc564 \ud83c\udf4e"
   },
   {
     "id": "212910",
@@ -3168,7 +3185,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/212910/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.69"
   },
   {
     "id": "212797",
@@ -3289,7 +3307,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/212789/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub05d\ub0ac\ub294\ub370 \uba38\ud574\uc6a9?"
   },
   {
     "id": "211683",
@@ -3324,7 +3343,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/211683/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.68"
   },
   {
     "id": "211462",
@@ -3363,7 +3383,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/211462/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub3c4\uc804\ud83d\udd25"
   },
   {
     "id": "211136",
@@ -3413,7 +3434,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/210481/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.67"
   },
   {
     "id": "210355",
@@ -3444,7 +3466,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/210355/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \ud83c\udfae \ub2a5\uccad \uce58\ud0a8\ub4c0\uc624\uc758 \ud574\ub0c5\ub2c8\ub2e4! \uce58\ud0a8 \uba39\ubc29! \ud83c\udf57 (HYEWON&NAKO playing mobile game)"
   },
   {
     "id": "210013",
@@ -3483,7 +3506,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/210013/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub0b0\ub0b0\ub0b0 \uc704\uc988\uc6d0 \ubaa8\uc5ec\ub77c~"
   },
   {
     "id": "209789",
@@ -3556,7 +3580,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/209371/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.66"
   },
   {
     "id": "208642",
@@ -3591,7 +3616,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/208642/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc5b4\ub5a4 \uafc8\uc774\ub77c\ub3c4 \uc9f8\uc694\ub2c8 \uafc8\uc774\ub77c\uba74 \uc804\ubd80 \uae38\ubabd\uc774\ub2e4\ud83c\udf19\ud83d\udca4 (CHAEYEON talking about WIZ*ONE\u2019s dream)"
   },
   {
     "id": "208398",
@@ -3626,7 +3652,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/208398/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ud558\ud130\ub05d \uc218\ub2e4\ud0c0\uc784 \uc640\ub77c\ub784\ub784\ud83d\udc19\ud83c\udf49"
   },
   {
     "id": "208346",
@@ -3657,7 +3684,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/208346/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.65"
   },
   {
     "id": "208005",
@@ -3692,7 +3720,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/208005/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc624\ub298\ub3c4 \uc55a\ub9dd\uc9c4\ucc3d\uc774\uc9c0\ub9cc \uadf8\ub798\uc11c \uc544\uc774\uc988\uc6d0 \uc644\uc804 \uc0ac\ub791\ud574\uc694 (IZ*ONE talking about game&scary story)"
   },
   {
     "id": "207935",
@@ -3731,7 +3760,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/207935/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uc6d0\uc601\uc774\uc758 \uc2ec\uc57c \uace0\ubbfc\uc0c1\ub2f4\uc18c\ud83e\uddda\ud83c\udffb\u200d\u2640\ufe0f\u2728"
   },
   {
     "id": "207557",
@@ -3770,7 +3800,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/207557/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc790\ubabd \ubc1c\uad74 \ub300\uc2e0 \ubc1c\uad74\ub41c \uac70\ub77c\uace4 \uc9f8\uc698\uc758 \uae5c\ucc0d\ud568 \ubfd0\ud83c\udf4a\ud83e\udde1 (CHAEYEON eating grapefruit)"
   },
   {
     "id": "207521",
@@ -3825,7 +3856,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/207521/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uadf8\ub0e5 \uadf8\ub0e5 \uadf8\ub0e5"
   },
   {
     "id": "207245",
@@ -3856,7 +3888,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/207245/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.64"
   },
   {
     "id": "207195",
@@ -3891,7 +3924,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/207195/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ucb5d\uc5bc\ucb5d\uc5bc \ud558\uace0 \uc2f6\uc740\ub385\ud83c\udf4a"
   },
   {
     "id": "206552",
@@ -3922,7 +3956,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/206552/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc6b8\uc9c0\ub9c8 \uc598\ub4dc\ub791.. \uc544\ub2c8 \uadfc\ub370 \uc548\uc720\uc9c4 \ub108\ubb34 \uadc0\uc5fd\ud751\ud761\ud750\ub055\ud751\ud83d\udca6 (YUJIN\u2019s \u2019Thirst\u2019 M/V reaction)"
   },
   {
     "id": "206431",
@@ -3957,7 +3992,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/206431/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub2a6\uc740 \uc2dc\uac04 \ucad1\uc54c\ucad1\uc54c \uac10\ub2f9..\uac00\ub2a5?\ud83d\udc3e"
   },
   {
     "id": "206428",
@@ -4000,7 +4036,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/206428/ko-fan.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub2a6\uc740 \uc2dc\uac04\uc5d0 \ucad1\uc54c\ucad1\uc54c \uac10\ub2f9 \uac00\ub2a5?\ud83d\ude48"
   },
   {
     "id": "206088",
@@ -4035,7 +4072,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/206088/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.63"
   },
   {
     "id": "206015",
@@ -4066,7 +4104,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/206015/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub315\ub315\ub77c\uc774\ube0c 7"
   },
   {
     "id": "206000",
@@ -4113,7 +4152,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/206000/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub8f8\uba54\uc988"
   },
   {
     "id": "205023",
@@ -4144,7 +4184,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/205023/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc804\uc138\uacc4 \ubaa8\ub4e0 \uc5b8\uc5b4\uc758 \uc0ac\ub791\ud574\ub97c \ub2e4 \uc218\uc9d1\ud574\uc11c \uc55a\uc988\uc5d0\uac8c\u2763\ufe0f\ud83d\udc8c (IZ*ONE's mission listening to I love you)"
   },
   {
     "id": "204906",
@@ -4175,7 +4216,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/204906/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.62"
   },
   {
     "id": "204812",
@@ -4214,7 +4256,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/204812/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub0b0\ub0b0\ud83d\udeaa"
   },
   {
     "id": "204780",
@@ -4245,7 +4288,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/204780/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uafc0\ubb3c\uc988\uc758 \uc624\ub298\ub3c4 \uac10\uc790\ud55c \ub77c\uc774\ube0c\ud83e\udd54\u2763\ufe0f (CHAEYEON&YURI talking about a story of the past)"
   },
   {
     "id": "204373",
@@ -4284,7 +4328,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/204373/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ud83c\udf6f\ud83d\udca7\uc988 \uc654\uc5b4\uc6a9~\u2614\ufe0f "
   },
   {
     "id": "204072",
@@ -4303,7 +4348,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/204072/ja-cp.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE GLOBAL OFFICIAL FANCLUB WIZ*ONE 2\uae30 \ud0a4\ud2b8 \uc5b8\ubc15\uc2f1"
   },
   {
     "id": "203717",
@@ -4338,7 +4384,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/203717/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.61"
   },
   {
     "id": "203574",
@@ -4361,7 +4408,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/203574/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc5c4\uc9c0 \uac80\uc9c0\uac00 N\uadf9 S\uadf9\uc774\ub77c\ub3c4 \uc624\ucf00\uc774\ub77c\uad6c\uc694\u2763\ufe0f (CHAE YEON talking about a episode with CHAE RYEONG)"
   },
   {
     "id": "203324",
@@ -4384,7 +4432,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/203324/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] 2020 \ucd5c\uace0\uc758 \uae30\ub300\uc791! \ub8f8\uba54\uc988\uc758 '\ub098\uc05c \ub188' \ucd5c\ucd08\uacf5\uac1c\ud83c\udfac\ud83c\udf9e\ufe0f (YENA&CHAEWON making music drama)"
   },
   {
     "id": "203199",
@@ -4419,7 +4468,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/203199/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uc7ac\uc798\uc7ac\uc798 \ud574\ub3c4 \ub420\uae4c\uc694?\ud83c\udf57"
   },
   {
     "id": "202968",
@@ -4466,7 +4516,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202968/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub8f8\uba54\uc988\uc758 \uac04\uc2dd\ud0c0\uc784!"
   },
   {
     "id": "202760",
@@ -4540,7 +4591,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202640/ko-cp.vtt"
       }
     ],
-    "tags": ["live", "audioOnly"]
+    "tags": ["live", "audioOnly"],
+    "koTitle": "\uc7a0\ub4e4\uae30\uc804 \uc704\uc988\uc6d0\u2661"
   },
   {
     "id": "202554",
@@ -4571,7 +4623,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202554/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.60"
   },
   {
     "id": "202429",
@@ -4614,7 +4667,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202429/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub315\ub315\ub77c\uc774\ube0c 6"
   },
   {
     "id": "202326",
@@ -4637,7 +4691,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202326/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc804\uc138\uacc4 \uc57c\uad11 \ub2e4 \ud569\ud574\ub3c4 \uc55a\uc988\ubcf4\ub2e8 \ub35c \ube5b\ub098\uac70\ub4e0\uc694\ud83c\udf1f\ud83d\udc85 (EUNBI&MINJU showing off their nail art)"
   },
   {
     "id": "202151",
@@ -4668,7 +4723,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202151/ko-cp.vtt"
       }
     ],
-    "tags": ["promotion"]
+    "tags": ["promotion"],
+    "koTitle": "[DICON] \uc559\uc988\ubf40\uc9dd \ud3f4\ub77c\ub85c\uc774\ub4dc \uafb8\ubbf8\uae30\u2462 (IZ*ONE)"
   },
   {
     "id": "202116",
@@ -4699,7 +4755,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202116/ko-cp.vtt"
       }
     ],
-    "tags": ["promotion"]
+    "tags": ["promotion"],
+    "koTitle": "[DICON] \uc559\uc988\ubf40\uc9dd \ud3f4\ub77c\ub85c\uc774\ub4dc \uafb8\ubbf8\uae30\u2461 (IZ*ONE)"
   },
   {
     "id": "202113",
@@ -4730,7 +4787,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202113/ko-cp.vtt"
       }
     ],
-    "tags": ["promotion"]
+    "tags": ["promotion"],
+    "koTitle": "[DICON] \uc559\uc988\ubf40\uc9dd \ud3f4\ub77c\ub85c\uc774\ub4dc \uafb8\ubbf8\uae30 \u2460 (IZ*ONE)"
   },
   {
     "id": "202079",
@@ -4765,7 +4823,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/202079/ko-cp.vtt"
       }
     ],
-    "tags": ["live", "audioOnly"]
+    "tags": ["live", "audioOnly"],
+    "koTitle": "\ucad1\uc54c\ucad1\uc54c \ud574\ub3c4 \ub3fc\uc694?\ud83e\udd8b"
   },
   {
     "id": "201859",
@@ -4792,7 +4851,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/201859/ko-cp.vtt"
       }
     ],
-    "tags": ["promotion"]
+    "tags": ["promotion"],
+    "koTitle": "[DICON] \u201c\uc6b4\uba85\ucc98\ub7fc \ucc3e\uc544\uc628 \uc55a\ub465\uc774\ub4e4\u201d (IZ*ONE)"
   },
   {
     "id": "201858",
@@ -4815,7 +4875,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/201858/ko-cp.vtt"
       }
     ],
-    "tags": ["promotion"]
+    "tags": ["promotion"],
+    "koTitle": "[DICON] \u201c\uc5b8\uc81c\ub098 Pretty so Sweety\u201d (IZ*ONE)"
   },
   {
     "id": "201540",
@@ -4834,7 +4895,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/201540/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \ub2e8\uc9e0\ub9db\uc9d1 \uc55a\uc988\uc758 \ud83c\udf1f\ub09c\uc774\ub3c4 \ubcc4 1029\uac1c\ud83c\udf1f \ubc38\ub7f0\uc2a4 \uac8c\uc784\u203c\ufe0f (IZ*ONE\u2019s balance game)"
   },
   {
     "id": "201362",
@@ -4857,7 +4919,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/201362/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.59"
   },
   {
     "id": "201161",
@@ -4966,7 +5029,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/201072/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uae4c\uafcd\ud83d\ude48\ud83d\udc95"
   },
   {
     "id": "200101",
@@ -4997,7 +5061,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/200101/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.58"
   },
   {
     "id": "199715",
@@ -5036,7 +5101,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/199715/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uac19\uc774 \uc800\ub141 \uba39\uc73c\uba74\uc11c \uc218\ub2e4 \ub5a0\uc2e4 \ubd80\uc6b4\ud83c\udf1e"
   },
   {
     "id": "199412",
@@ -5055,7 +5121,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/199412/ja-cp.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE \ub79c\uc120 \uc9d1\ub4e4\uc774(Housewarming Party) EP.2"
   },
   {
     "id": "199290",
@@ -5074,7 +5141,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/199290/ja-cp.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE \ub79c\uc120 \uc9d1\ub4e4\uc774(Housewarming Party) EP.1"
   },
   {
     "id": "199011",
@@ -5093,7 +5161,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/199011/ko-fan.vtt"
       }
     ],
-    "tags": ["dancePractice"]
+    "tags": ["dancePractice"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - \ud658\uc0c1\ub3d9\ud654 (Secret Story of the Swan) Dance Practice"
   },
   {
     "id": "198819",
@@ -5128,7 +5197,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/198819/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.57"
   },
   {
     "id": "198101",
@@ -5138,7 +5208,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/198101/198101.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/198101/thumb.jpg",
     "subtitles": [],
-    "tags": ["liev"]
+    "tags": ["liev"],
+    "koTitle": "\uc790\uc7a5\uac00 X \uc544\uc774\uc988\uc6d0 - by \ub215\ubc29 LieV"
   },
   {
     "id": "198100",
@@ -5148,7 +5219,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/198100/198100.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/198100/thumb.jpg",
     "subtitles": [],
-    "tags": ["liev"]
+    "tags": ["liev"],
+    "koTitle": "ASMR X \uc544\uc774\uc988\uc6d0 - by \ub215\ubc29 LieV"
   },
   {
     "id": "197967",
@@ -5167,7 +5239,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/197967/ja-cp.vtt"
       }
     ],
-    "tags": ["makingFilm"]
+    "tags": ["makingFilm"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) 3rd Mini Album [Oneiric Diary (\u5e7b\u60f3\u65e5\u8a18)] Jacket Making Film"
   },
   {
     "id": "197929",
@@ -5190,7 +5263,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/197929/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \ub9c8\uc74c\uc758 \uc548\uc815\uc740 \ube44\ub85c\uc18c \uc55a\ub9dd\uc9c4\ucc3d\uc73c\ub85c\ubd80\ud130..\ud83d\udcab\ud83c\udfdd\ufe0f (IZ*ONE\u2019s lively LieV)"
   },
   {
     "id": "197712",
@@ -5209,7 +5283,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/197712/ja-cp.vtt"
       }
     ],
-    "tags": ["makingFilm"]
+    "tags": ["makingFilm"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) 3rd Mini Album [Oneiric Diary (\u5e7b\u60f3\u65e5\u8a18)] MV Making Film"
   },
   {
     "id": "197707",
@@ -5224,7 +5299,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/197707/en-fan.vtt"
       }
     ],
-    "tags": ["cheerGuide"]
+    "tags": ["cheerGuide"],
+    "koTitle": "IZ*ONE(\uc544\uc774\uc988\uc6d0) - 'Pretty' \uc751\uc6d0\ubc95"
   },
   {
     "id": "197701",
@@ -5239,7 +5315,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/197701/en-fan.vtt"
       }
     ],
-    "tags": ["cheerGuide"]
+    "tags": ["cheerGuide"],
+    "koTitle": "IZ*ONE(\uc544\uc774\uc988\uc6d0) - '\ud658\uc0c1\ub3d9\ud654 (Secret Story of the Swan)' \uc751\uc6d0\ubc95 "
   },
   {
     "id": "197688",
@@ -5286,7 +5363,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/197688/ko-cp.vtt"
       }
     ],
-    "tags": ["mv"]
+    "tags": ["mv"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) \ud658\uc0c1\ub3d9\ud654 (Secret Story of the Swan) MV"
   },
   {
     "id": "196653",
@@ -5296,7 +5374,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/196653/196653.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/196653/thumb.jpg",
     "subtitles": [],
-    "tags": ["mv"]
+    "tags": ["mv"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - \ud658\uc0c1\ub3d9\ud654 (Secret Story of the Swan) MV Teaser 2"
   },
   {
     "id": "196268",
@@ -5306,7 +5385,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/196268/196268.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/196268/thumb.jpg",
     "subtitles": [],
-    "tags": ["mv"]
+    "tags": ["mv"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - \ud658\uc0c1\ub3d9\ud654(Secret Story of the Swan) MV Teaser 1"
   },
   {
     "id": "196146",
@@ -5341,7 +5421,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/196146/ko-cp.vtt"
       }
     ],
-    "tags": ["live", "liev"]
+    "tags": ["live", "liev"],
+    "koTitle": "[Full] IZ*ONE X LieV - \uc544\uc774\uc988\uc6d0\uc758 \ub215\ubc29\ub77c\uc774\ube0c!"
   },
   {
     "id": "195959",
@@ -5356,7 +5437,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/195959/ko-fan.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) 3rd Mini Album [Oneiric Diary (\u5e7b\u60f3\u65e5\u8a18)] HIGHLIGHT MEDLEY"
   },
   {
     "id": "194174",
@@ -5410,7 +5492,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/193063/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.56 "
   },
   {
     "id": "191842",
@@ -5461,7 +5544,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/191842/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.55"
   },
   {
     "id": "190663",
@@ -5492,7 +5576,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/190663/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.54"
   },
   {
     "id": "188744",
@@ -5543,7 +5628,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/188744/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uad8c\uc740\ube44X\ub098\ucf54, \uc874\uc7ac\uac00 \uc560\uad50..\uc787\ubab8 \ub9cc\uac1c \ubbf8\uc18c \ubd80\ub974\ub294 \uadc0\uc5ec\uc6c0 #\uc2a4\ud0c0\ub85c\ub4dc \ud558\uc774\ub77c\uc774\ud2b8 06"
   },
   {
     "id": "188330",
@@ -5590,7 +5676,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/188330/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uc548\uc720\uc9c4X\uac15\ud61c\uc6d0, \uc9c4\uc815\ud55c \uc785\ub355\uc694\uc815\ub4e4 #\uc2a4\ud0c0\ub85c\ub4dc \ud558\uc774\ub77c\uc774\ud2b85"
   },
   {
     "id": "188027",
@@ -5617,7 +5704,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/188027/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0 \ud50c\ub7ec\uc2a4(ENOZI Cam +) \ub9dd\uace0\ube59\uc218 \uba39\ubc29 in 2019 TAIPEI"
   },
   {
     "id": "187980",
@@ -5672,7 +5760,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/187980/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \ucd5c\uc608\ub098X\ud788\ud1a0\ubbf8, \ubcf4\uae30\ub9cc \ud574\ub3c4 \uc6c3\uc74c\uc774 \ub098\ub294 \uadc0\uc5ec\uc6c0 #\uc2a4\ud0c0\ub85c\ub4dc \ud558\uc774\ub77c\uc774\ud2b8 4"
   },
   {
     "id": "187587",
@@ -5719,7 +5808,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/187587/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uc870\uc720\ub9acX\uae40\ucc44\uc6d0, \ub7ec\ube14\ub9ac \uadf8 \uc790\uccb4..\ub9e4\ub825\ubd80\uc790 \uc308\uc728 #\uc2a4\ud0c0\ub85c\ub4dc \ud558\uc774\ub77c\uc774\ud2b83"
   },
   {
     "id": "187169",
@@ -5770,7 +5860,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/187169/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uc0ac\ucfe0\ub77cX\ubbfc\uc8fc, \ube44\uc8fc\uc5bc \ucc9c\uc7ac\ub77c \ubd88\ub9ac\ub294 \uc774\uc720 #\uc2a4\ud0c0\ub85c\ub4dc \ud558\uc774\ub77c\uc774\ud2b82"
   },
   {
     "id": "186707",
@@ -5793,7 +5884,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/186707/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.53"
   },
   {
     "id": "186668",
@@ -5844,7 +5936,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/186668/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uc6d0\uc601X\ucc44\uc5f0, \uc785\ub355\ud560 \uc218\ubc16\uc5d0 \uc5c6\ub294 \uc21c\uac04\ub4e4 #\uc2a4\ud0c0\ub85c\ub4dc \ud558\uc774\ub77c\uc774\ud2b81"
   },
   {
     "id": "185774",
@@ -5903,7 +5996,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/185774/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \ub9c8\uc9c0\ub9c9\uae4c\uc9c0 \ud6c8\ud6c8+\ub7ec\ube14\ub9ac\ud55c \uba64\ubc84\ub4e4 #\uc2a4\ud0c0\ub85c\ub4dc 24"
   },
   {
     "id": "185772",
@@ -5958,7 +6052,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/185772/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uc990\uac70\uc6b4 \ud68c\uc2dd \uc2dc\uac04 (ft.\uba39\ubc29 \uc694\uc815) #\uc2a4\ud0c0\ub85c\ub4dc 23"
   },
   {
     "id": "185411",
@@ -5981,7 +6076,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/185411/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.52"
   },
   {
     "id": "185007",
@@ -6032,7 +6128,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/185007/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \ub098\ucf54X\ud788\ud1a0\ubbf8X\uc6d0\uc601\uc774 \uc5bb\uace0 \uc2f6\uc740 \uc218\uc2dd\uc5b4? #\uc2a4\ud0c0\ub85c\ub4dc 22"
   },
   {
     "id": "185005",
@@ -6095,7 +6192,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/185005/ko-fan.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \ubbfc\uc8fcX\ud61c\uc6d0\uc758 \ub208\ubb3c\ubc84\ud2bc\uc740? #\uc2a4\ud0c0\ub85c\ub4dc 21"
   },
   {
     "id": "184847",
@@ -6146,7 +6244,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/184847/ko-cp.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uc778\ud130\ubdf0 2\ud0c4 For Vietnam \uc704\uc988\uc6d0"
   },
   {
     "id": "184844",
@@ -6205,7 +6304,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/184844/ko-cp.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uc778\ud130\ubdf0 1\ud0c4 For Vietnam \uc704\uc988\uc6d0"
   },
   {
     "id": "183980",
@@ -6264,7 +6364,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/183980/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uc720\uc9c4X\uc0ac\ucfe0\ub77cX\uc720\ub9ac\uac00 \uaf3d\uc740 \uc785\ub355\ud3ec\uc778\ud2b8  #\uc2a4\ud0c0\ub85c\ub4dc 20"
   },
   {
     "id": "183978",
@@ -6319,7 +6420,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/183978/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, TMI \ub300\ubc29\ucd9c \uac1c\uc778 \uc778\ud130\ubdf0 #\uc2a4\ud0c0\ub85c\ub4dc 19"
   },
   {
     "id": "183811",
@@ -6338,7 +6440,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/183811/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.51"
   },
   {
     "id": "183272",
@@ -6393,7 +6496,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/183272/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \ud1a0\ud06c\ud558\ub294 \ubaa8\uc2b5\ub9c8\uc800 \ub7ec\ube14\ub9ac \uadf8 \uc790\uccb4 #\uc2a4\ud0c0\ub85c\ub4dc 18"
   },
   {
     "id": "183270",
@@ -6448,7 +6552,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/183270/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uc790\uc720\uc2dc\uac04 \ub9de\uc544 \ud150\uc158 \ub300\ud3ed\ubc1c #\uc2a4\ud0c0\ub85c\ub4dc 17"
   },
   {
     "id": "182691",
@@ -6507,7 +6612,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/182691/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uc560\uad50\u2192\ub304\uc2a4\uae4c\uc9c0 \uc885\ud569\uc120\ubb3c\uc138\ud2b8! #\uc2a4\ud0c0\ub85c\ub4dc 16"
   },
   {
     "id": "182690",
@@ -6562,7 +6668,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/182690/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uc131\ub300\ubaa8\uc0ac\ub97c \uac00\uc7a5\ud55c \ubbf8\ub2f4 \uacf5\uac1c? #\uc2a4\ud0c0\ub85c\ub4dc 15"
   },
   {
     "id": "182550",
@@ -6585,7 +6692,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/182550/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.50"
   },
   {
     "id": "182160",
@@ -6640,7 +6748,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/182160/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uacf0\ub3cc\uc774\uc758 \ub2aa\uc5d0 \ube60\uc9c4 \ubbfc\uc8fc #\uc2a4\ud0c0\ub85c\ub4dc 14"
   },
   {
     "id": "182158",
@@ -6695,7 +6804,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/182158/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \ubab8\uc73c\ub85c \ub9d0\ud574\uc694 \uac8c\uc784 \uc2dc\uac04! #\uc2a4\ud0c0\ub85c\ub4dc 13"
   },
   {
     "id": "181608",
@@ -6750,7 +6860,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/181608/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \ucc44\uc6d0\uc774 \uc274 \ub54c \uc8fc\ub85c \ud558\ub294 \uac83\uc740? #\uc2a4\ud0c0\ub85c\ub4dc 12"
   },
   {
     "id": "181603",
@@ -6805,7 +6916,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/181603/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uba64\ubc84\ub4e4\ub3c4 \uc0ac\ub85c\uc7a1\uc740 \ub098\ucf54\uc758 \ub9e4\ub825 #\uc2a4\ud0c0\ub85c\ub4dc 11"
   },
   {
     "id": "181454",
@@ -6824,7 +6936,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/181454/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.49"
   },
   {
     "id": "181104",
@@ -6879,7 +6992,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/181104/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 TMI\ud034\uc988, \ubc8c\uce59\ubc1b\ub294 \ubaa8\uc2b5\uae4c\uc9c0 \uadc0\uc5ec\uc6cc #\uc2a4\ud0c0\ub85c\ub4dc 10"
   },
   {
     "id": "181101",
@@ -6934,7 +7048,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/181101/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0 \uba64\ubc84\ub4e4\uc774 \uaf3d\uc740 \ucd5c\uace0 \uc9d1\uc21c\uc774\ub294 #\uc2a4\ud0c0\ub85c\ub4dc 09"
   },
   {
     "id": "180892",
@@ -7060,7 +7175,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/180556/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, 'La Vie en Rose' \ube44\ud558\uc778\ub4dc \ub300\uacf5\uac1c #\uc2a4\ud0c0\ub85c\ub4dc 07"
   },
   {
     "id": "180554",
@@ -7115,7 +7231,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/180554/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0\uc774 \ub2e4\uc2dc \ub3cc\uc544\ubcf4\ub294 '\ube44\uc62c\ub808\ud0c0' MV #\uc2a4\ud0c0\ub85c\ub4dc 08"
   },
   {
     "id": "180404",
@@ -7170,7 +7287,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/180404/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.48"
   },
   {
     "id": "179995",
@@ -7225,7 +7343,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/179995/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, ASMR \ud558\ub2e4\uac00 \ud558\uc774\ud150\uc158 \ud3ed\ubc1c #\uc2a4\ud0c0\ub85c\ub4dc 06"
   },
   {
     "id": "179975",
@@ -7284,7 +7403,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/179975/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uc774\ub807\uac8c \uadc0\uc5ec\uc6b4 ASMR\uc740 \ucc98\uc74c #\uc2a4\ud0c0\ub85c\ub4dc 05"
   },
   {
     "id": "179548",
@@ -7351,7 +7471,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/179548/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0 \ud50c\ub7ec\uc2a4(ENOZI Cam +) '\uc5b8\uc820\uac00 \uc6b0\ub9ac\uc758 \ubc24\ub3c4 \uc9c0\ub098\uac00\uaca0\uc8e0' \ub808\ucf54\ub529 \ube44\ud558\uc778\ub4dc"
   },
   {
     "id": "179317",
@@ -7406,7 +7527,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/179317/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0\uc758 \ucd5c\uace0 \uc560\uad50\uc655\uc740? #\uc2a4\ud0c0\ub85c\ub4dc 04"
   },
   {
     "id": "179315",
@@ -7461,7 +7583,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/179315/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uc140\uce74 \ube44\ubc95 \uacf5\uac1c..\uc218\ub2e4 \ub300\ud3ed\ubc1c #\uc2a4\ud0c0\ub85c\ub4dc 03"
   },
   {
     "id": "179186",
@@ -7512,7 +7635,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/179186/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.47"
   },
   {
     "id": "178736",
@@ -7535,7 +7659,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/178736/ko-fan.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - 'SPACESHIP' Choreography (Close up ver.)"
   },
   {
     "id": "178672",
@@ -7554,7 +7679,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/178672/ko-fan.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - 'SPACESHIP' Choreography (To WIZ*ONE ver.)"
   },
   {
     "id": "178622",
@@ -7613,7 +7739,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/178622/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0\uc774 \uc9c1\uc811 \ubf51\uc740 \ubbf8\ubaa8\uc0c1\uc740? #\uc2a4\ud0c0\ub85c\ub4dc 02"
   },
   {
     "id": "178621",
@@ -7672,7 +7799,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/178621/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0, \uc5ed\ub300\uae09 \ubbf8\ubaa8\ub85c \ub4dc\ub514\uc5b4 \ucc3e\uc544\uc654\ub2e4! #\uc2a4\ud0c0\ub85c\ub4dc 01"
   },
   {
     "id": "178219",
@@ -7731,7 +7859,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/178219/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0 \ud50c\ub7ec\uc2a4(ENOZI Cam +) 'SPACESHIP' \ub808\ucf54\ub529 \ube44\ud558\uc778\ub4dc"
   },
   {
     "id": "178147",
@@ -7774,7 +7903,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/178147/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0\uc758 \uac10\ucdb0\uc628 \ub9e4\ub825\uc774 \uacf5\uac1c\ub429\ub2c8\ub2e4! '\uc2a4\ud0c0\ub85c\ub4dc' Teaser #02"
   },
   {
     "id": "177925",
@@ -7821,7 +7951,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/177925/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.46"
   },
   {
     "id": "177740",
@@ -7840,7 +7971,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/177740/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0 \ud50c\ub7ec\uc2a4(ENOZI Cam +) 'COMEBACK IZ*ONE BLOOM*IZ' \ube44\ud558\uc778\ub4dc"
   },
   {
     "id": "177616",
@@ -7859,7 +7991,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/177616/ko-fan.vtt"
       }
     ],
-    "tags": ["dancePractice"]
+    "tags": ["dancePractice"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - 'FIESTA' Dance Practice"
   },
   {
     "id": "177252",
@@ -7906,7 +8039,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/177252/ko-cp.vtt"
       }
     ],
-    "tags": ["starRoad"]
+    "tags": ["starRoad"],
+    "koTitle": "IZ*ONE \uc544\uc774\uc988\uc6d0\uc774 '\uc2a4\ud0c0\ub85c\ub4dc'\uc5d0 \uc628\ub2e4\u00a0Teaser\u00a0#01"
   },
   {
     "id": "177044",
@@ -7933,7 +8067,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/177044/zh-fan.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) 'FIESTA' Recording Behind"
   },
   {
     "id": "176906",
@@ -7988,7 +8123,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/176906/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": " IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.45"
   },
   {
     "id": "176185",
@@ -8007,7 +8143,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/176185/th-fan.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - 1st Album [BLOOM*IZ] \uc5b8\ubc15\uc2f1 ASMR 'I WILL' ver."
   },
   {
     "id": "176182",
@@ -8034,7 +8171,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/176182/zh-fan.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - 1st Album [BLOOM*IZ] \uc5b8\ubc15\uc2f1 ASMR 'I AM' ver."
   },
   {
     "id": "176180",
@@ -8061,7 +8199,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/176180/zh-fan.vtt"
       }
     ],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - 1st Album [BLOOM*IZ] \uc5b8\ubc15\uc2f1 ASMR 'I WAS' ver."
   },
   {
     "id": "175987",
@@ -8076,7 +8215,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/175987/en-fan.vtt"
       }
     ],
-    "tags": ["cheerGuide"]
+    "tags": ["cheerGuide"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - 'FIESTA' \uc751\uc6d0\ubc95"
   },
   {
     "id": "175822",
@@ -8137,7 +8277,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/175437/175437.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/175437/thumb.jpg",
     "subtitles": [],
-    "tags": ["misc"]
+    "tags": ["misc"],
+    "koTitle": "IZ*ONE\uc758 \ud574\ud53c \ubc1c\ub80c\ud0c0\uc778\ub370\uc774\ud83c\udf6b\u2763"
   },
   {
     "id": "174909",
@@ -8147,7 +8288,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/174909/174909.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/174909/thumb.jpg",
     "subtitles": [],
-    "tags": ["mv"]
+    "tags": ["mv"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) - 'FIESTA' MV Teaser "
   },
   {
     "id": "174656",
@@ -8174,7 +8316,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/174656/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.44"
   },
   {
     "id": "174589",
@@ -8184,7 +8327,8 @@
     "video": "https://hls.izonev.live/file/izone-vlive-hls/174589/174589.m3u8",
     "thumbnail": "https://hls.izonev.live/file/izone-vlive-hls/174589/thumb.jpg",
     "subtitles": [],
-    "tags": ["makingFilm"]
+    "tags": ["makingFilm"],
+    "koTitle": "IZ*ONE (\uc544\uc774\uc988\uc6d0) 1st Album [BLOOM*IZ] Jacket Making Film"
   },
   {
     "id": "158731",
@@ -8356,7 +8500,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/157478/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.42"
   },
   {
     "id": "156835",
@@ -8411,7 +8556,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/156835/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0 \ud50c\ub7ec\uc2a4(ENOZI Cam +) \uc544\uc774\uc988\uc6d0, \ud0dc\uad6d \ub9c8\ud2b8\uc5d0 \uac00\ub2e4!"
   },
   {
     "id": "156740",
@@ -8505,7 +8651,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/156492/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ud574\ud53c\uc728\ub370\uc774\ud83d\udc39\ud83e\udde1"
   },
   {
     "id": "156306",
@@ -8721,7 +8868,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/153784/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ud788\uc9f1\ub370\uc774\ud83e\udd73\ud83d\udc95"
   },
   {
     "id": "153579",
@@ -8764,7 +8912,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/153579/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ud83e\udd8b\ud83c\udf5e\uace0\ubbfc \uc0c1\ub2f4\uc18c2-2\u2764"
   },
   {
     "id": "153576",
@@ -8807,7 +8956,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/153576/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ud83e\udd8b\ud83c\udf5e\uace0\ubbfc \uc0c1\ub2f4\uc18c2\u2764"
   },
   {
     "id": "152802",
@@ -9023,7 +9173,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/152294/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uad8c\ub9ac\ub354\ud0c4\uc2e0\uc77c\ud83d\udc30\ud83c\udf82"
   },
   {
     "id": "151310",
@@ -9400,7 +9551,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/148260/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0 \ud50c\ub7ec\uc2a4(ENOZI Cam +) MGMA \u00b7 KB \ub9ac\ube0c\ucf58\uc11c\ud2b8 \ube44\ud558\uc778\ub4dc"
   },
   {
     "id": "148236",
@@ -9447,7 +9599,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/148236/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub315\ub315\ub77c\uc774\ube0c5 "
   },
   {
     "id": "148230",
@@ -9502,7 +9655,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/148230/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub315\ub315\ub77c\uc774\ube0c5"
   },
   {
     "id": "148113",
@@ -9553,7 +9707,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/148113/ko-cp.vtt"
       }
     ],
-    "tags": ["live", "audioOnly"]
+    "tags": ["live", "audioOnly"],
+    "koTitle": "\uc194\uc9c1\ud788 \uc2ec\uc2ec\ud558\uc9c0?!"
   },
   {
     "id": "147671",
@@ -9710,7 +9865,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/147527/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ud574\ud53c\ub315\ub315\ub370\uc774\ud83d\udc36\ud83c\udf82\ud83c\udf89"
   },
   {
     "id": "147470",
@@ -9800,7 +9956,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/147467/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ud574\ud53c\ub155\ub370\uc774\ud83d\udc30\ud83c\udf82\ud83d\udc95"
   },
   {
     "id": "146625",
@@ -10020,7 +10177,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/145806/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0 \ud50c\ub7ec\uc2a4(ENOZI Cam +) \ubba4\uc9c1\ubc45\ud06c \uc0c1\ubc18\uae30 \uacb0\uc0b0 \ube44\ud558\uc778\ub4dc"
   },
   {
     "id": "145687",
@@ -10099,7 +10257,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/145687/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uc704\uc988\uc6d0 \uc624\ub298\ub3c4 \uac10\ub3d9\uc774\uc57c\ud83d\udc93"
   },
   {
     "id": "145326",
@@ -10178,7 +10337,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/145326/ko-cp.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.33"
   },
   {
     "id": "145237",
@@ -10217,7 +10377,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/145237/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc9f8\ube44 \ucf00\uc774\ud06c \ud558\ub098 \uc7a1\uc234\u2763\ufe0f \uc634\ub1f8\ub1f8 \uba39\ubc29\uc5d0 \uc2ec\uc7a5 \uc640\uc544\uc559\ud83d\udc95\ud83c\udf70 (EUNBI&CHAEWON eating cherry and cake)"
   },
   {
     "id": "145067",
@@ -10378,7 +10539,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/144308/ko-fan.vtt"
       }
     ],
-    "tags": ["enozi"]
+    "tags": ["enozi"],
+    "koTitle": "IZ*ONE \uc5d0\ub108\uc9c0 \ucea0(ENOZI Cam) EP.32"
   },
   {
     "id": "144217",
@@ -10429,7 +10591,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/144217/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "TMI\uc1fc  "
   },
   {
     "id": "143265",
@@ -10500,7 +10663,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/143265/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub315\ub315\ub77c\uc774\ube0c+\ud83e\uddda\ud83c\udffb\u200d\u2640\ufe0f "
   },
   {
     "id": "143205",
@@ -10772,7 +10936,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/142664/ko-fan.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uc308\ud0c4\uc808\ud83e\uddda\u200d\u2642\ufe0f\ud83c\udf82\ud83d\udc96 CHAE WON's birthday."
   },
   {
     "id": "141912",
@@ -10819,7 +10984,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/141912/ko-cp.vtt"
       }
     ],
-    "tags": ["live", "audioOnly"]
+    "tags": ["live", "audioOnly"],
+    "koTitle": "\ucc44\uc5f0\uc774\uc758 \uace0\ubbfc\uc0c1\ub2f42\u2661 "
   },
   {
     "id": "141907",
@@ -10870,7 +11036,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/141907/ko-cp.vtt"
       }
     ],
-    "tags": ["live", "audioOnly"]
+    "tags": ["live", "audioOnly"],
+    "koTitle": "\ucc44\uc5f0\uc774\uc758 \uace0\ubbfc\uc0c1\ub2f4\u2661 "
   },
   {
     "id": "141373",
@@ -10956,7 +11123,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/141128/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uad8c\uc60c\ucc48\uc308\uc758 \uc694\uac70\ud2b8 \uba39\ubc29 "
   },
   {
     "id": "141049",
@@ -11003,7 +11171,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/141049/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uc0c4\uad11\uc548\ub155\ud83d\udc4b"
   },
   {
     "id": "140959",
@@ -11101,7 +11270,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/140751/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "01\uc988\uc758 Sunday\ud83c\udf24"
   },
   {
     "id": "140614",
@@ -11198,7 +11368,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/139050/ko-cp.vtt"
       }
     ],
-    "tags": ["vpick"]
+    "tags": ["vpick"],
+    "koTitle": "[IZ*ONE] \uc624\ub298\uc740 \uc810\uc2ec\uc73c\ub85c \ucd08\ubc25&\ud6c4\uc2dd\uc73c\ub85c \uc694\uac70\ud2b8 \uba39\uc73c\ub7ec \ub274\uc695 \uac00\uc57c\uaca0\uc5b4\uc694\ud83d\ude0e (IZ*ONE talking about episodes in New York)"
   },
   {
     "id": "138859",
@@ -11383,7 +11554,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/138164/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ubbf8\ub9ac \ud61c\uc6d0 \ub370\uc774\ud83d\udc39\ud83d\udc95\ud83c\udf82"
   },
   {
     "id": "138141",
@@ -11548,7 +11720,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/137976/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub315\ub315\ub77c\uc774\ube0c3\ud83d\udc36"
   },
   {
     "id": "137820",
@@ -11642,7 +11815,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/137501/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uc704\uc988\uc6d0 \ubaa8\uc5ec\ub77c\ud83c\udf1f"
   },
   {
     "id": "137339",
@@ -11748,7 +11922,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/137275/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\uc990\uac70\uc6e0\uc5b4 \uc704\uc988\uc6d0\ud83d\udc95"
   },
   {
     "id": "136885",
@@ -11826,7 +12001,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/136635/ko-cp.vtt"
       }
     ],
-    "tags": ["live", "audioOnly"]
+    "tags": ["live", "audioOnly"],
+    "koTitle": "\uc8c4\uc1a1\ud574\uc694 \ub2e4\uc2dc\ub2e4\uc2dc\ud83d\ude02"
   },
   {
     "id": "136630",
@@ -11932,7 +12108,8 @@
         "url": "https://hls.izonev.live/file/izone-vlive-hls/136611/ko-cp.vtt"
       }
     ],
-    "tags": ["live"]
+    "tags": ["live"],
+    "koTitle": "\ub450 \ubc88\uc9f8 \uc2f1\uae00 \ud83e\udd73\u270c"
   },
   {
     "id": "135220",
