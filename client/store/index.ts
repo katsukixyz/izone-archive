@@ -1,6 +1,8 @@
 import { useTranslation } from "next-i18next";
+import { useContext } from "react";
 import { atom, selector } from "recoil";
 import { combineFilters, tagCategories } from "../components/FilterData";
+import LocaleContext from "../contexts/LocaleContext";
 import meta from "../public/meta.json";
 import { SortOption, TagOption, VideoMeta } from "../types/types";
 
