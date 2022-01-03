@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Box, Link as ChakraLink, Stack, Tag, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import dayjs from "dayjs";
+import "dayjs/locale/en";
+import "dayjs/locale/ko";
 import { useTranslation } from "next-i18next";
 import LocaleContext from "../contexts/LocaleContext";
 
@@ -71,7 +73,17 @@ const VideoCard: React.FC<VideoCardProps> = ({ item }) => {
           </Text>
         </ChakraLink>
         <Text mt="2" fontSize="md">
-          {dayjs.utc(date).local().format("MMMM D YYYY, h:mm:ss A")}
+          {locale === "en"
+            ? dayjs
+                .utc(date)
+                .locale(locale)
+                .local()
+                .format("MMMM D YYYY, h:mm:ss A")
+            : dayjs
+                .utc(date)
+                .locale(locale)
+                .local()
+                .format("YYYY년 MMMM D일 A h:mm:ss")}
         </Text>
         <Stack direction="row" mt="2">
           {tags.map((tag) => (

@@ -3,6 +3,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import Head from "next/head";
 import dayjs from "dayjs";
+import "dayjs/locale/en";
+import "dayjs/locale/ko";
 import utc from "dayjs/plugin/utc";
 import ReactPlayer from "react-player/lazy";
 import meta from "../../public/meta.json";
@@ -95,7 +97,17 @@ const Video: React.FC<{ vidObj: VideoMeta }> = ({ vidObj }) => {
                   {locale === "en" ? title : koTitle || title}
                 </Text>
                 <Text mb="2">
-                  {dayjs.utc(date).local().format("MMMM D YYYY, h:mm:ss A")}
+                  {locale === "en"
+                    ? dayjs
+                        .utc(date)
+                        .locale(locale)
+                        .local()
+                        .format("MMMM D YYYY, h:mm:ss A")
+                    : dayjs
+                        .utc(date)
+                        .locale(locale)
+                        .local()
+                        .format("YYYY년 MMMM D일 A h:mm:ss")}
                 </Text>
                 {subtitles.length !== 0 ? (
                   <Center
