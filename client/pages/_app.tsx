@@ -12,6 +12,7 @@ import AutoplayContext from "../contexts/AutoplayContext";
 import CustomNav from "../components/CustomNav";
 import LocaleContext from "../contexts/LocaleContext";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Maintenance from "../components/Maintenance";
 
 const theme = extendTheme({
   colors: {
@@ -55,6 +56,10 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
       ? localStorage.setItem("autoplay", "true")
       : setAutoplay(localStorage.getItem("autoplay") === "true");
   }, []);
+
+  if (process.env.NEXT_PUBLIC_MAINTENANCE === "true") {
+    return <Maintenance />;
+  }
 
   return (
     <AutoplayContext.Provider value={{ autoplay, toggleAutoplay }}>
