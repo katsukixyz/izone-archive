@@ -1,7 +1,7 @@
 const { i18n } = require("./next-i18next.config");
 module.exports = {
   i18n,
-  redirects() {
+  async redirects() {
     return [
       process.env.MAINTENANCE_MODE === "1"
         ? {
