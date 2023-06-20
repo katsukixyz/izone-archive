@@ -36,7 +36,7 @@ export default function Home({
           editor. Create boxes by double-clicking on the timeline. Resize the
           boxes to cover all logos and trademarked names. While the boxes have
           no fill in the editor, be assured that the reprocessed videos will
-          have the boxes filled in. Once you're done editing a video, feel free
+          have the boxes filled in. Once you are done editing a video, feel free
           to mark as complete to update the status of the video. I apologize for
           the quality of the website - you may run into some issues with the
           editor. In this case, please do not hesitate to reach out. Thank you
