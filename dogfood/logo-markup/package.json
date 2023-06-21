@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node -r esm ./db/seed.ts"
+    "seed": "node -r esm ./db/seed.ts",
+    "export": "next export"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.0",
