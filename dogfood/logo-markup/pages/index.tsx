@@ -66,6 +66,9 @@ export default function Home({
                       justifyContent="space-between"
                       bgColor={i % 2 === 0 ? "white" : "gray.50"}
                       p={2}
+                      _hover={{
+                        cursor: "pointer",
+                      }}
                     >
                       <Text>{video.id}</Text>
                       <Tag colorScheme={video.completed ? "green" : "red"}>
