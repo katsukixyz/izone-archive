@@ -10,6 +10,8 @@ import dynamic from "next/dynamic";
 import {
   Box,
   Button,
+  Grid,
+  GridItem,
   Heading,
   Slider,
   SliderFilledTrack,
@@ -467,6 +469,80 @@ export default function VideoPage(props: VideoPageProps) {
               >
                 Mark complete and save
               </Button>
+              <Heading as="h3" size="md">Load box position/dimensions for selected box</Heading>
+              <Grid templateColumns='repeat(10, 1fr)' gap={1}>
+                {Array.from(Array(10).keys()).map((key, i) => (
+                  <GridItem key={i} w="10%">
+                    <Button
+                      onClick={() => {
+                        if (selectedAction === null) {
+                          toast({
+                            title: "Error",
+                            description: "Select a box before saving",
+                            status: "error",
+                            duration: 4000,
+                            isClosable: true,
+                          });
+                          return;
+                        };
+                        if (localStorage.getItem(`saved-box-dimensions-${i}`) === null) {
+                          toast({
+                            title: "Error",
+                            description: "No dimensions are saved on this slot",
+                            status: "error",
+                            duration: 4000,
+                            isClosable: true,
+                          });
+                          return;
+                        }
+                        const selectedBoxIndex = data[0].actions.findIndex((action) => action.id === selectedShape ||
+                          action.id === selectedAction?.id)
+                        const actions = [...data[0].actions];
+                        const attrs = JSON.parse(localStorage.getItem(`saved-box-dimensions-${i}`) || "");
+                        const newActionObj = {
+                          ...actions[selectedBoxIndex],
+                          ...attrs,
+                        };
+                        actions[selectedBoxIndex] = newActionObj;
+                        setData([{ id: "0", actions }]);
+                      }}
+                    >
+                      {++i}
+                    </Button>
+                  </GridItem>
+                ))}
+              </Grid>
+              <Heading as="h3" size="md">Save selected box position/dimensions</Heading>
+              <Grid templateColumns='repeat(10, 1fr)' gap={1}>
+                {Array.from(Array(10).keys()).map((key, i) => (
+                  <GridItem key={i} w="10%">
+                    <Button
+                      onClick={() => {
+                        if (selectedAction === null) {
+                          toast({
+                            title: "Error",
+                            description: "Select a box before loading",
+                            status: "error",
+                            duration: 4000,
+                            isClosable: true,
+                          });
+                          return;
+                        };
+                        const selectedBox = data[0].actions.filter((action) => action.id === selectedShape ||
+                          action.id === selectedAction?.id)
+                        localStorage.setItem(`saved-box-dimensions-${i}`, JSON.stringify({
+                          x: selectedBox[0].x,
+                          y: selectedBox[0].y,
+                          width: selectedBox[0].width,
+                          height: selectedBox[0].height
+                        }))
+                      }}
+                    >
+                      {++i}
+                    </Button>
+                  </GridItem>
+                ))}
+              </Grid>
             </>
           )}
         </Stack>
