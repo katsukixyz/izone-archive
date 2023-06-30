@@ -4,6 +4,7 @@ import {
   Button,
   Flex,
   Heading,
+  Progress,
   Spinner,
   Stack,
   Tag,
@@ -22,6 +23,9 @@ export default function Home({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(videos);
+
+  const completedCount = loading ? 0 : data.filter(video => video.completed).length;
+
   return (
     <>
       <Head>
@@ -29,6 +33,10 @@ export default function Home({
       </Head>
       <Box p={10}>
         <Heading>Video Markup Dashboard</Heading>
+        <Box mt={2} mb={2}>
+          <Progress value={completedCount / data.length * 100} hasStripe />
+          <Text fontWeight={700}>{completedCount} / {data.length} ({Math.round(completedCount / data.length * 100)}%)</Text>
+        </Box>
         <Text mt={2} mb={2}>
           Thanks for making it over to this site! Your help is very very
           appreciated - it would take me a while to do this alone. This
